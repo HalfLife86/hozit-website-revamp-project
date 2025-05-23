@@ -12,6 +12,7 @@ import { DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const domainPricing = [
+  { extension: '.co.za', price: 100.80, popular: true, description: 'South African' },
   { extension: '.com', price: 240.08, popular: true, description: 'Global Standard' },
   { extension: '.org', price: 240.08, popular: false, description: 'Organizations' },
   { extension: '.net', price: 288.36, popular: false, description: 'Networks' },
@@ -21,7 +22,6 @@ const domainPricing = [
   { extension: '.online', price: 360.00, popular: false, description: 'Modern Websites' },
   { extension: '.site', price: 598.08, popular: false, description: 'General Websites' },
   { extension: '.xyz', price: 249.91, popular: false, description: 'Modern & Versatile' },
-  { extension: '.co.za', price: 100.80, popular: true, description: 'South African' },
 ];
 
 const DomainPricing = () => {
