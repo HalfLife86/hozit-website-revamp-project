@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail } from 'lucide-react';
+import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ServiceCard = ({ 
@@ -83,6 +83,24 @@ const Services = () => {
       title: 'Network Design',
       description: 'A robust and well-designed network forms the backbone of your IT infrastructure, enabling seamless communication, across your organization.',
       ctaText: 'Compare Packages'
+    },
+    {
+      icon: Mail,
+      title: 'Microsoft 365 Setup and Migration',
+      description: 'Seamlessly transition your business to Microsoft 365 with our expert setup and migration services. We handle everything from account configuration to data migration, ensuring zero downtime and enhanced productivity.',
+      ctaText: 'Learn More'
+    },
+    {
+      icon: Laptop,
+      title: 'Computer Hardware',
+      description: 'Get the right hardware solutions for your business needs. We provide consultation, procurement, and installation of high-quality computer hardware that aligns with your business requirements and budget.',
+      ctaText: 'View Options'
+    },
+    {
+      icon: Key,
+      title: 'Software Sales and Licensing',
+      description: 'Navigate the complex world of software licensing with our expert guidance. We help you find the most cost-effective licensing solutions for your business applications and ensure compliance with all relevant regulations.',
+      ctaText: 'Explore Solutions'
     }
   ];
 
