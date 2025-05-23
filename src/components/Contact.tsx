@@ -80,7 +80,7 @@ const Contact = () => {
               <ContactInfo 
                 icon={Phone} 
                 title="Phone" 
-                content="+27 (0) 123 456 7890" 
+                content="+27 66 527 5917" 
               />
               
               <ContactInfo 
@@ -92,7 +92,7 @@ const Contact = () => {
               <ContactInfo 
                 icon={MapPin} 
                 title="Address" 
-                content="123 Main Street, Johannesburg, South Africa" 
+                content="145 Second Street, Parkmore Sandton, Johannesburg, 2196" 
               />
               
               <div className="mt-8">
