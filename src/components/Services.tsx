@@ -115,7 +115,8 @@ const Services = () => {
       icon: Laptop,
       title: 'Computer Hardware',
       description: 'Get the right hardware solutions for your business needs. We provide consultation, procurement, and installation of high-quality computer hardware that aligns with your business requirements and budget.',
-      ctaText: 'View Options'
+      ctaText: 'View Options',
+      link: '/computer-hardware'
     },
     {
       icon: Key,
