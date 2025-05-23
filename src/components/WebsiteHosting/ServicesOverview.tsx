@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Server, Database } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const ServicesOverview = () => {
   return (
@@ -19,8 +20,31 @@ const ServicesOverview = () => {
             <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
               <Database className="h-8 w-8 text-orange-600" />
             </div>
-            <h3 className="text-2xl font-semibold mb-3">Domain Registration Services</h3>
+            <h3 className="text-2xl font-semibold mb-3">
+              <a 
+                href="https://www.hozit.co.za/whmcs/cart.php?a=add&domain=register" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-900 hover:text-orange-600 transition-colors"
+              >
+                Domain Registration Services
+              </a>
+            </h3>
             <p className="text-gray-600">Choosing the right domain name is crucial as it represents your brand identity on the web. Our domain registration services simplify the process of securing your desired domain name, whether it's a traditional .co.za, .com, .net, or a niche-specific extension. Our user-friendly interface allows you to search for available domain names and register them with ease.</p>
+            <div className="mt-4">
+              <Button 
+                className="bg-orange-500 hover:bg-orange-600 text-white" 
+                asChild
+              >
+                <a 
+                  href="https://www.hozit.co.za/whmcs/cart.php?a=add&domain=register" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Register a Domain
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
