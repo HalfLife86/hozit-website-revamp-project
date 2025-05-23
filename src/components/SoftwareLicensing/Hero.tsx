@@ -18,12 +18,9 @@ const SoftwareLicensingHero = () => {
             <p className="text-white mb-8">
               At Hozit Domain Hosting, we take the complexity out of software licensing, helping your business save time, reduce costs, and ensure compliance.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Explore Our Solutions <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>
