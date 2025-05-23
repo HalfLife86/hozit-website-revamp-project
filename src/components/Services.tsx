@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key, HeadsetIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,7 +51,8 @@ const Services = () => {
       icon: Globe,
       title: 'Domain Registration',
       description: 'Establishing a strong online presence starts with the right domain name and reliable website hosting.',
-      ctaText: 'Register your Domain'
+      ctaText: 'Register your Domain',
+      link: '/domain-registration'
     },
     {
       icon: Monitor,
