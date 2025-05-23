@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -96,7 +97,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(to right, rgba(11, 61, 145, 0.9), rgba(30, 95, 207, 0.9));
+  background: linear-gradient(to right, rgba(255, 107, 0, 0.9), rgba(255, 132, 0, 0.9));
 }
 
 @layer components {
@@ -105,19 +106,19 @@
   }
   
   .nav-link {
-    @apply hover:text-it-blue transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium;
+    @apply hover:text-it-accent transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium;
   }
   
   .nav-link.active {
-    @apply text-it-blue font-medium;
+    @apply text-it-accent font-medium;
   }
   
   .btn-primary {
-    @apply bg-it-blue hover:bg-it-blue-light text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
+    @apply bg-it-accent hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
   }
   
   .btn-secondary {
-    @apply bg-white border border-it-blue text-it-blue hover:bg-it-blue hover:text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
+    @apply bg-white border border-it-accent text-it-accent hover:bg-it-accent hover:text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
   }
   
   .btn-accent {

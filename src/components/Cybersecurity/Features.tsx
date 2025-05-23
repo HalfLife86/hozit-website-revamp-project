@@ -48,10 +48,10 @@ const CybersecurityFeatures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-2 border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+            <Card key={index} className="border-2 border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all duration-300">
               <CardHeader className="pb-2">
                 <div className="flex items-center gap-2">
-                  <Shield className="h-6 w-6 text-blue-600" />
+                  <Shield className="h-6 w-6 text-orange-600" />
                   <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
                 </div>
               </CardHeader>

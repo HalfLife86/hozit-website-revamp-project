@@ -62,7 +62,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-it-blue"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-it-accent"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" aria-hidden="true" />
