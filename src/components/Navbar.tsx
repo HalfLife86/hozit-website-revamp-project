@@ -33,6 +33,11 @@ const Navbar = () => {
     };
   }, []);
 
+  // Determine which logo to display based on scroll state
+  const logoSrc = isScrolled 
+    ? "/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" // Original logo for white background
+    : "/lovable-uploads/c03573d3-cab6-4fcb-9bca-485ca653719e.png"; // New logo for orange hero sections
+
   return (
     <nav
       className={`fixed w-full z-30 transition-all duration-300 ${
@@ -44,7 +49,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
+                src={logoSrc}
                 alt="HozIT Logo" 
                 className="h-14 md:h-16"
               />
@@ -53,11 +58,11 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/" className="nav-link text-black font-bold">Home</Link>
+            <Link to="/" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Home</Link>
             
             {/* Services Dropdown Menu */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="nav-link text-black font-bold flex items-center">
+              <DropdownMenuTrigger className={`nav-link font-bold flex items-center ${isScrolled ? 'text-black' : 'text-white'}`}>
                 Services <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white rounded-md shadow-lg p-2">
@@ -100,7 +105,7 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link to="/contact" className="nav-link text-black font-bold">Contact</Link>
+            <Link to="/contact" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Contact</Link>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
 
@@ -109,7 +114,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-orange-600"
+              className={`inline-flex items-center justify-center p-2 rounded-md hover:text-orange-600 ${isScrolled ? 'text-black' : 'text-white'}`}
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" aria-hidden="true" />
