@@ -53,7 +53,7 @@ const PopupOffer = () => {
 
           <div className="text-center mt-7">
             <Link 
-              to="/website-hosting" 
+              to="/website-hosting#basic-plan" 
               className="inline-block bg-[#ff6600] text-white px-7 py-3 text-lg rounded-lg font-bold shadow-lg hover:bg-orange-500 transition-colors"
               onClick={() => setIsOpen(false)}
             >
