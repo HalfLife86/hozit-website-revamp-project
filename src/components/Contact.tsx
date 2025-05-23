@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
@@ -108,6 +109,11 @@ const Contact = () => {
                   </a>
                   <a href="https://www.linkedin.com/company/hozit-domain-hosting" target="_blank" rel="noopener noreferrer" className="p-2 bg-black/10 rounded-full hover:bg-black/20 transition-colors">
                     <Linkedin className="w-5 h-5 text-black" />
+                  </a>
+                  <a href="https://www.tiktok.com/@hozit.domain.host" target="_blank" rel="noopener noreferrer" className="p-2 bg-black/10 rounded-full hover:bg-black/20 transition-colors">
+                    <svg className="w-5 h-5 text-black" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.321 5.562a5.124 5.124 0 0 1-3.035-2.494 5.12 5.12 0 0 1-.477-1.976H12.05v12.337a2.318 2.318 0 0 1-3.555 1.959 2.318 2.318 0 0 1-1.082-1.959c0-1.28 1.037-2.318 2.318-2.318.22 0 .433.031.636.088V7.406a6.114 6.114 0 0 0-.636-.033c-3.382 0-6.124 2.742-6.124 6.124S6.349 19.62 9.731 19.62c3.383 0 6.124-2.742 6.124-6.124v-6.87a8.803 8.803 0 0 0 5.322 1.77V5.562h-1.856Z" />
+                    </svg>
                   </a>
                 </div>
               </div>
