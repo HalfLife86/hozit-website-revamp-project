@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,20 +36,21 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
                 alt="HozIT Logo" 
                 className="h-14 md:h-16"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#home" className="nav-link active">Home</a>
-            <a href="#services" className="nav-link">Services</a>
-            <a href="#about" className="nav-link">About</a>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/website-hosting" className="nav-link">Website Hosting</Link>
+            <Link to="/domain-registration" className="nav-link">Domain Registration</Link>
+            <Link to="/web-development" className="nav-link">Web Development</Link>
             <a href="#contact" className="nav-link">Contact</a>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
@@ -73,9 +75,10 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white rounded-lg mt-2 shadow-lg animate-fade-in">
-              <a href="#home" className="nav-link active block px-3 py-2">Home</a>
-              <a href="#services" className="nav-link block px-3 py-2">Services</a>
-              <a href="#about" className="nav-link block px-3 py-2">About</a>
+              <Link to="/" className="nav-link block px-3 py-2">Home</Link>
+              <Link to="/website-hosting" className="nav-link block px-3 py-2">Website Hosting</Link>
+              <Link to="/domain-registration" className="nav-link block px-3 py-2">Domain Registration</Link>
+              <Link to="/web-development" className="nav-link block px-3 py-2">Web Development</Link>
               <a href="#contact" className="nav-link block px-3 py-2">Contact</a>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>
