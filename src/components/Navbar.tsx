@@ -85,6 +85,9 @@ const Navbar = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/app-development" className="w-full px-3 py-2 hover:bg-orange-100 rounded">APP Development</Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/network-design" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Network Design</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -125,6 +128,7 @@ const Navbar = () => {
                 <Link to="/it-support" className="nav-link text-black block px-3 py-1 pl-6 text-sm">IT Support</Link>
                 <Link to="/server-support" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Server Support</Link>
                 <Link to="/app-development" className="nav-link text-black block px-3 py-1 pl-6 text-sm">APP Development</Link>
+                <Link to="/network-design" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Network Design</Link>
               </div>
               
               <a href="#contact" className="nav-link text-black block px-3 py-2">Contact</a>
