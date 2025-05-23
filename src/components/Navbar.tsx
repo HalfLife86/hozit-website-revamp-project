@@ -39,7 +39,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
                 alt="HozIT Logo" 
-                className="h-10 md:h-12"
+                className="h-14 md:h-16"
               />
             </a>
           </div>
