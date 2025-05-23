@@ -6,6 +6,7 @@ import Services from '@/components/Services';
 import Features from '@/components/Features';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
+import PopupOffer from '@/components/PopupOffer';
 
 const Index = () => {
   // Smooth scrolling functionality
@@ -37,6 +38,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PopupOffer />
       <main>
         <Hero />
         <Services />
