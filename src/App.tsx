@@ -17,6 +17,7 @@ import NetworkDesign from "./pages/NetworkDesign";
 import Microsoft365 from "./pages/Microsoft365";
 import ComputerHardware from "./pages/ComputerHardware";
 import SoftwareLicensing from "./pages/SoftwareLicensing";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/microsoft-365" element={<Microsoft365 />} />
           <Route path="/computer-hardware" element={<ComputerHardware />} />
           <Route path="/software-licensing" element={<SoftwareLicensing />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
