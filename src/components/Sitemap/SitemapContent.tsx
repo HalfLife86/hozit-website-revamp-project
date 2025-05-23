@@ -17,6 +17,7 @@ const SitemapContent = () => {
     { name: 'Microsoft 365', path: '/microsoft-365' },
     { name: 'Computer Hardware', path: '/computer-hardware' },
     { name: 'Software Licensing', path: '/software-licensing' },
+    { name: 'Contact', path: '/contact' },
     { name: 'Terms of Service', path: '/terms-of-service' },
     { name: 'Privacy Policy', path: '/privacy-policy' },
   ];

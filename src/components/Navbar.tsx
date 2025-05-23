@@ -100,7 +100,7 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <a href="#contact" className="nav-link text-black font-bold">Contact</a>
+            <Link to="/contact" className="nav-link text-black font-bold">Contact</Link>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
 
@@ -143,7 +143,7 @@ const Navbar = () => {
                 <Link to="/software-licensing" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Software Licensing</Link>
               </div>
               
-              <a href="#contact" className="nav-link text-black font-bold block px-3 py-2">Contact</a>
+              <Link to="/contact" className="nav-link text-black font-bold block px-3 py-2">Contact</Link>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>
           </div>

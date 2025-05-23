@@ -17,6 +17,7 @@ import NetworkDesign from "./pages/NetworkDesign";
 import Microsoft365 from "./pages/Microsoft365";
 import ComputerHardware from "./pages/ComputerHardware";
 import SoftwareLicensing from "./pages/SoftwareLicensing";
+import Contact from "./pages/Contact";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Sitemap from "./pages/Sitemap";
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/microsoft-365" element={<Microsoft365 />} />
           <Route path="/computer-hardware" element={<ComputerHardware />} />
           <Route path="/software-licensing" element={<SoftwareLicensing />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />
