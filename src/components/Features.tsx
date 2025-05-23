@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle, Server, ArrowRight, Shield, Users, Database, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -41,22 +40,22 @@ const Features = () => {
     {
       icon: Server,
       title: 'Up To 20X Faster Servers',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+      description: 'Experience lightning-fast performance with our optimized server infrastructure. Our high-performance servers deliver up to 20 times faster processing speeds compared to traditional hosting, ensuring your applications run smoothly and efficiently at all times.'
     },
     {
       icon: ArrowRight,
       title: 'Free Account Migration',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+      description: 'Switching to HozIT is completely hassle-free. Our team of experts will handle your entire account migration at no additional cost. We ensure a seamless transition with zero downtime, so you can enjoy better service without any interruption to your business.'
     },
     {
       icon: Shield,
       title: 'Anytime Money Back Guarantee',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+      description: 'We stand behind our services with complete confidence. If you\'re not fully satisfied with our solutions, we offer a comprehensive money-back guarantee with no questions asked. Your investment is protected, giving you peace of mind when choosing HozIT for your IT needs.'
     },
     {
       icon: Clock,
       title: '99.9% Uptime Commitment',
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+      description: 'Reliability is our priority. We guarantee 99.9% uptime for all our services, ensuring your business remains operational around the clock. Our robust infrastructure and proactive monitoring systems work tirelessly to prevent downtime and maintain continuous service availability.'
     }
   ];
 
