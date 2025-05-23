@@ -30,8 +30,8 @@ const GuaranteeItem = ({ text }: { text: string }) => {
 
 const PartnerLogo = ({ name, logoUrl }: { name: string; logoUrl: string }) => {
   return (
-    <div className="bg-white p-4 rounded-lg shadow-sm">
-      <img src={logoUrl} alt={`${name} logo`} className="h-12 object-contain mx-auto" />
+    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center h-24">
+      <img src={logoUrl} alt={`${name} logo`} className="max-h-16 max-w-full object-contain" />
     </div>
   );
 };
@@ -68,13 +68,34 @@ const Features = () => {
   ];
 
   const partners = [
-    { name: 'Cisco', logoUrl: 'https://www.cisco.com/c/dam/en/us/td/i/200/203/2039/cisco-logo.jpg' },
-    { name: 'CloudLinux', logoUrl: 'https://www.cloudlinux.com/images/logo.png' },
-    { name: 'cPanel', logoUrl: 'https://cpanel.net/wp-content/themes/cPbase/assets/img/cpanel-logo.svg' },
-    { name: 'Dell', logoUrl: 'https://www.dell.com/favicon.ico' },
-    { name: 'Imunify360', logoUrl: 'https://www.imunify360.com/images/logo-imunify360.svg' },
-    { name: 'JetBackup', logoUrl: 'https://jetbackup.com/wp-content/uploads/2020/03/jetbackup_logo.svg' },
-    { name: 'Lenovo', logoUrl: 'https://www.lenovo.com/favicon.ico' }
+    { 
+      name: 'Cisco', 
+      logoUrl: 'https://www.cisco.com/c/dam/en/us/td/i/200/203/2039/n_cisco-logo-blue-no-tagline_gif.gif' 
+    },
+    { 
+      name: 'CloudLinux', 
+      logoUrl: 'https://www.cloudlinux.com/images/cl-logo.png' 
+    },
+    { 
+      name: 'cPanel', 
+      logoUrl: 'https://cpanel.net/wp-content/themes/cPbase/assets/img/cpanel-logo.svg' 
+    },
+    { 
+      name: 'Dell', 
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/1200px-Dell_logo_2016.svg.png' 
+    },
+    { 
+      name: 'Imunify360', 
+      logoUrl: 'https://www.imunify360.com/images/logo-imunify360.svg' 
+    },
+    { 
+      name: 'JetBackup', 
+      logoUrl: 'https://jetbackup.com/wp-content/uploads/2020/03/jetbackup_logo.svg' 
+    },
+    { 
+      name: 'Lenovo', 
+      logoUrl: 'https://logos-world.net/wp-content/uploads/2020/11/Lenovo-Logo.png' 
+    }
   ];
 
   return (
@@ -124,7 +145,7 @@ const Features = () => {
         
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Our Partners</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
             {partners.map((partner, index) => (
               <PartnerLogo key={index} name={partner.name} logoUrl={partner.logoUrl} />
             ))}
