@@ -52,13 +52,15 @@ const PopupOffer = () => {
           </ul>
 
           <div className="text-center mt-4 sm:mt-7">
-            <Link 
-              to="/website-hosting#basic-plan" 
+            <a 
+              href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/199-package" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#ff6600] text-white px-4 sm:px-7 py-2 sm:py-3 text-base sm:text-lg rounded-lg font-bold shadow-lg hover:bg-orange-500 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               👉 Claim This Offer Now
-            </Link>
+            </a>
           </div>
 
           <p className="text-center mt-3 sm:mt-4 text-xs sm:text-sm text-gray-600">Don't miss out – this deal won't last long!</p>
