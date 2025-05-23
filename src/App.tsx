@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import WebsiteHosting from "./pages/WebsiteHosting";
 import DomainRegistration from "./pages/DomainRegistration";
 import WebDevelopment from "./pages/WebDevelopment";
+import SEO from "./pages/SEO";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/website-hosting" element={<WebsiteHosting />} />
           <Route path="/domain-registration" element={<DomainRegistration />} />
           <Route path="/web-development" element={<WebDevelopment />} />
+          <Route path="/seo" element={<SEO />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
