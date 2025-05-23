@@ -6,6 +6,7 @@ import DomainRegistrationHero from '@/components/DomainRegistration/Hero';
 import DomainBenefits from '@/components/DomainRegistration/Benefits';
 import DomainExtensions from '@/components/DomainRegistration/Extensions';
 import DomainFeatures from '@/components/DomainRegistration/Features';
+import DomainPricing from '@/components/DomainRegistration/Pricing';
 import DomainCTA from '@/components/DomainRegistration/CTA';
 
 const DomainRegistration = () => {
@@ -21,6 +22,7 @@ const DomainRegistration = () => {
         <DomainRegistrationHero />
         <DomainBenefits />
         <DomainExtensions />
+        <DomainPricing />
         <DomainFeatures />
         <DomainCTA />
       </main>
