@@ -1,10 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 33% 99%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 215 73% 31%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -22,7 +25,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 24 100% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,24 +33,17 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 215 73% 31%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -70,7 +66,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 24 100% 50%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -96,6 +92,36 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(11, 61, 145, 0.9), rgba(30, 95, 207, 0.9));
+}
+
+@layer components {
+  .service-card {
+    @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 hover:text-it-blue transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium;
+  }
+  
+  .nav-link.active {
+    @apply text-it-blue font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-it-blue hover:bg-it-blue-light text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border border-it-blue text-it-blue hover:bg-it-blue hover:text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-it-accent hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-md transition-colors duration-200;
   }
 }
