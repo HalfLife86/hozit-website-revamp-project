@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -18,27 +17,13 @@ const SEOHero = () => {
             <p className="text-white mb-8">
               In the vast digital landscape, standing out amidst the competition requires more than just a stunning website—it demands strategic visibility. At Hozit Domain Hosting, we specialize in Search Engine Optimization (SEO) services designed to elevate your online presence and drive organic traffic to your website.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
                 asChild
               >
                 <a href="#packages">View SEO Packages <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-orange-600"
-                asChild
-              >
-                <a 
-                  href="https://www.hozit.co.za/whmcs/contact.php" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Get a Custom Quote
-                </a>
               </Button>
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Laptop } from 'lucide-react';
@@ -18,12 +17,9 @@ const ComputerHardwareHero = () => {
             <p className="text-white mb-8">
               At Hozit Domain Hosting, we provide high-quality computer hardware solutions tailored to your business needs. From workstations and servers to networking equipment and peripherals, we ensure that your hardware infrastructure supports your operational requirements efficiently and reliably.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Explore Solutions <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>

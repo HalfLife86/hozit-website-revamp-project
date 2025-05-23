@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -18,7 +17,7 @@ const DomainRegistrationHero = () => {
             <p className="text-white mb-8">
               Your domain name is more than just a web address—it's the foundation of your online presence and a crucial element of your brand identity. At Hozit Domain Hosting, we offer comprehensive domain registration services to help you secure the perfect domain name for your business or personal project.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
@@ -31,9 +30,6 @@ const DomainRegistrationHero = () => {
                 >
                   Search & Register Now <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>

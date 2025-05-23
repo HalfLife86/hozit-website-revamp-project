@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -18,12 +17,9 @@ const AppDevelopmentHero = () => {
             <p className="text-white mb-8">
               We turn your boldest ideas into powerful, user-friendly apps. Our expert team blends creativity with cutting-edge technology to craft solutions that not only meet your needs but also captivate and inspire. Let's transform your vision into a seamless digital experience.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>

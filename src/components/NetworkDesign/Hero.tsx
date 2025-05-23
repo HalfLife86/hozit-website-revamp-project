@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -18,21 +17,13 @@ const NetworkDesignHero = () => {
             <p className="text-white mb-8">
               A robust and well-designed network forms the backbone of your IT infrastructure, enabling seamless communication, collaboration, and data exchange across your organization. At Hozit Domain Hosting, we offer comprehensive network design and implementation services to help you build a secure, reliable, and scalable network infrastructure that meets your business needs and supports your growth objectives.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
                 asChild
               >
                 <a href="#packages">Get Started <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-orange-600"
-                asChild
-              >
-                <a href="#features">Learn More</a>
               </Button>
             </div>
           </div>

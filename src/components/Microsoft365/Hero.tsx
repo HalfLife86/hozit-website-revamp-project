@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -18,12 +17,9 @@ const Microsoft365Hero = () => {
             <p className="text-white mb-8">
               At Hozit Domain Hosting, we help businesses unlock the full potential of Microsoft 365 — the leading cloud-based productivity suite. Whether you're a small business or a growing enterprise, our Microsoft 365 solutions are designed to streamline your operations, enhance collaboration, and secure your digital workspace.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>

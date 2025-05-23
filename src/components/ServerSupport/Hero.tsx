@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Server } from 'lucide-react';
@@ -16,21 +15,13 @@ const ServerSupportHero = () => {
               including Windows, Linux, and other server OS platforms. Our dedicated team of experts is committed to keeping your server 
               environment running smoothly and securely, regardless of the operating system you choose.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
                 asChild
               >
                 <a href="#solutions">Get Started Now <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-orange-600"
-                asChild
-              >
-                <a href="#features">Learn More</a>
               </Button>
             </div>
           </div>

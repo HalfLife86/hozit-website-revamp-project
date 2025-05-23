@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -21,27 +20,13 @@ const CybersecurityHero = () => {
               Our comprehensive approach to cyber security encompasses a range of proactive measures to protect 
               your sensitive data, critical systems, and reputation.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
                 asChild
               >
                 <a href="#packages">View Security Packages <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-orange-600"
-                asChild
-              >
-                <a 
-                  href="https://www.hozit.co.za/whmcs/contact.php" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Get a Custom Quote
-                </a>
               </Button>
             </div>
           </div>

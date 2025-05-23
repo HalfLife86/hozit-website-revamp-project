@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -15,12 +14,9 @@ const ITSupportHero = () => {
             <p className="text-lg md:text-xl text-white mb-8 max-w-lg">
               Navigating the complexities of IT infrastructure can be daunting, but with Hozit Domain Hosting's comprehensive IT technical support services, you can focus on your core business while we take care of your IT needs.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>
