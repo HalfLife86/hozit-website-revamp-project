@@ -122,7 +122,8 @@ const Services = () => {
       icon: Key,
       title: 'Software Sales and Licensing',
       description: 'Navigate the complex world of software licensing with our expert guidance. We help you find the most cost-effective licensing solutions for your business applications and ensure compliance with all relevant regulations.',
-      ctaText: 'Explore Solutions'
+      ctaText: 'Explore Solutions',
+      link: '/software-licensing'
     }
   ];
 
