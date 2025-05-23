@@ -54,6 +54,7 @@ const Navbar = () => {
             <Link to="/seo" className="nav-link text-black">SEO</Link>
             <Link to="/cybersecurity" className="nav-link text-black">Cybersecurity</Link>
             <Link to="/it-support" className="nav-link text-black">IT Support</Link>
+            <Link to="/server-support" className="nav-link text-black">Server Support</Link>
             <a href="#contact" className="nav-link text-black">Contact</a>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
@@ -85,6 +86,7 @@ const Navbar = () => {
               <Link to="/seo" className="nav-link text-black block px-3 py-2">SEO</Link>
               <Link to="/cybersecurity" className="nav-link text-black block px-3 py-2">Cybersecurity</Link>
               <Link to="/it-support" className="nav-link text-black block px-3 py-2">IT Support</Link>
+              <Link to="/server-support" className="nav-link text-black block px-3 py-2">Server Support</Link>
               <a href="#contact" className="nav-link text-black block px-3 py-2">Contact</a>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>
