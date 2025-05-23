@@ -53,54 +53,54 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/" className="nav-link text-black">Home</Link>
+            <Link to="/" className="nav-link text-black font-bold">Home</Link>
             
             {/* Services Dropdown Menu */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="nav-link text-black flex items-center">
+              <DropdownMenuTrigger className="nav-link text-black font-bold flex items-center">
                 Services <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white rounded-md shadow-lg p-2">
                 <DropdownMenuItem asChild>
-                  <Link to="/website-hosting" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Website Hosting</Link>
+                  <Link to="/website-hosting" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Website Hosting</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/domain-registration" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Domain Registration</Link>
+                  <Link to="/domain-registration" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Domain Registration</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/web-development" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Web Development</Link>
+                  <Link to="/web-development" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Web Development</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/seo" className="w-full px-3 py-2 hover:bg-orange-100 rounded">SEO</Link>
+                  <Link to="/seo" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">SEO</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/cybersecurity" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Cybersecurity</Link>
+                  <Link to="/cybersecurity" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Cybersecurity</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/it-support" className="w-full px-3 py-2 hover:bg-orange-100 rounded">IT Support</Link>
+                  <Link to="/it-support" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">IT Support</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/server-support" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Server Support</Link>
+                  <Link to="/server-support" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Server Support</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/app-development" className="w-full px-3 py-2 hover:bg-orange-100 rounded">APP Development</Link>
+                  <Link to="/app-development" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">APP Development</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/network-design" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Network Design</Link>
+                  <Link to="/network-design" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Network Design</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/microsoft-365" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Microsoft 365 Setup</Link>
+                  <Link to="/microsoft-365" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Microsoft 365 Setup</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/computer-hardware" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Computer Hardware</Link>
+                  <Link to="/computer-hardware" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Computer Hardware</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/software-licensing" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Software Licensing</Link>
+                  <Link to="/software-licensing" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Software Licensing</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <a href="#contact" className="nav-link text-black">Contact</a>
+            <a href="#contact" className="nav-link text-black font-bold">Contact</a>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
 
@@ -124,26 +124,26 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white rounded-lg mt-2 shadow-lg animate-fade-in">
-              <Link to="/" className="nav-link text-black block px-3 py-2">Home</Link>
+              <Link to="/" className="nav-link text-black font-bold block px-3 py-2">Home</Link>
               
               {/* Mobile Services Section with collapsible items */}
               <div className="space-y-1 pl-3">
-                <div className="nav-link text-black font-semibold px-3 py-2">Services</div>
-                <Link to="/website-hosting" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Website Hosting</Link>
-                <Link to="/domain-registration" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Domain Registration</Link>
-                <Link to="/web-development" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Web Development</Link>
-                <Link to="/seo" className="nav-link text-black block px-3 py-1 pl-6 text-sm">SEO</Link>
-                <Link to="/cybersecurity" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Cybersecurity</Link>
-                <Link to="/it-support" className="nav-link text-black block px-3 py-1 pl-6 text-sm">IT Support</Link>
-                <Link to="/server-support" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Server Support</Link>
-                <Link to="/app-development" className="nav-link text-black block px-3 py-1 pl-6 text-sm">APP Development</Link>
-                <Link to="/network-design" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Network Design</Link>
-                <Link to="/microsoft-365" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Microsoft 365 Setup</Link>
-                <Link to="/computer-hardware" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Computer Hardware</Link>
-                <Link to="/software-licensing" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Software Licensing</Link>
+                <div className="nav-link text-black font-bold px-3 py-2">Services</div>
+                <Link to="/website-hosting" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Website Hosting</Link>
+                <Link to="/domain-registration" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Domain Registration</Link>
+                <Link to="/web-development" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Web Development</Link>
+                <Link to="/seo" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">SEO</Link>
+                <Link to="/cybersecurity" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Cybersecurity</Link>
+                <Link to="/it-support" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">IT Support</Link>
+                <Link to="/server-support" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Server Support</Link>
+                <Link to="/app-development" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">APP Development</Link>
+                <Link to="/network-design" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Network Design</Link>
+                <Link to="/microsoft-365" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Microsoft 365 Setup</Link>
+                <Link to="/computer-hardware" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Computer Hardware</Link>
+                <Link to="/software-licensing" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Software Licensing</Link>
               </div>
               
-              <a href="#contact" className="nav-link text-black block px-3 py-2">Contact</a>
+              <a href="#contact" className="nav-link text-black font-bold block px-3 py-2">Contact</a>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>
           </div>
