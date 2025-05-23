@@ -6,6 +6,7 @@ export const hostingPlans = [
     name: "Basic",
     price: "R199.00",
     period: "/Year",
+    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/199-package",
     features: [
       "10GB SSD Web Space",
       "500GB Bandwidth",
@@ -31,6 +32,7 @@ export const hostingPlans = [
     name: "Standard",
     price: "R50.00",
     period: "/month",
+    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/we",
     features: [
       "20GB SSD Web Space",
       "50GB Bandwidth",
@@ -56,6 +58,7 @@ export const hostingPlans = [
     name: "Advanced",
     price: "R100.00",
     period: "/month",
+    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/advanced-hosting",
     features: [
       "100GB SSD Web Space",
       "200GB Bandwidth",
@@ -81,6 +84,7 @@ export const hostingPlans = [
     name: "Master",
     price: "R250.00",
     period: "/month",
+    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/master-hosting",
     features: [
       "300GB SSD Web Space",
       "Unlimited Bandwidth",
@@ -106,6 +110,7 @@ export const hostingPlans = [
     name: "Premium",
     price: "R500.00",
     period: "/month",
+    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/premium-hosting",
     features: [
       "500GB SSD Web Space",
       "Unlimited Bandwidth",

@@ -92,8 +92,13 @@ const HostingPlans = () => {
                 <TableCell className="font-semibold">Order Now</TableCell>
                 {hostingPlans.map((plan, index) => (
                   <TableCell key={index} className="text-center">
-                    <Button className={`${plan.name === "Standard" ? "bg-amber-500 hover:bg-amber-600" : "bg-blue-600 hover:bg-blue-700"} text-white`}>
-                      Order Now
+                    <Button 
+                      className={`${plan.name === "Standard" ? "bg-amber-500 hover:bg-amber-600" : "bg-blue-600 hover:bg-blue-700"} text-white`}
+                      asChild
+                    >
+                      <a href={plan.orderLink} target="_blank" rel="noopener noreferrer">
+                        Order Now
+                      </a>
                     </Button>
                   </TableCell>
                 ))}
@@ -122,8 +127,13 @@ const HostingPlans = () => {
                       <span className="text-3xl font-bold">{plan.price}</span>
                       <span className="text-sm">{plan.period}</span>
                     </div>
-                    <Button className={`w-full ${plan.name === "Standard" ? 'bg-white text-amber-500 hover:bg-gray-100' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>
-                      Order Now
+                    <Button 
+                      className={`w-full ${plan.name === "Standard" ? 'bg-white text-amber-500 hover:bg-gray-100' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
+                      asChild
+                    >
+                      <a href={plan.orderLink} target="_blank" rel="noopener noreferrer">
+                        Order Now
+                      </a>
                     </Button>
                   </div>
                   
