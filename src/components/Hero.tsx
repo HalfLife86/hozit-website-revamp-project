@@ -5,21 +5,21 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-white">
+    <section id="home" className="relative pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-black">
-              IT Solutions for Your <span className="text-it-accent">Business Growth</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white">
+              IT Solutions for Your <span className="text-black">Business Growth</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-lg">
+            <p className="text-lg md:text-xl text-white mb-8 max-w-lg">
               Professional IT services and solutions tailored to help your business thrive in the digital world.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-it-accent hover:bg-amber-600 text-white font-bold">
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-it-blue text-it-blue hover:bg-it-blue hover:text-white">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
                 Learn More
               </Button>
             </div>
@@ -27,7 +27,7 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <div className="bg-white p-8 rounded-lg shadow-xl transform rotate-2 animate-fade-in border border-gray-200">
-              <h3 className="text-xl font-bold text-it-blue mb-4">Ready to transform your business?</h3>
+              <h3 className="text-xl font-bold text-black mb-4">Ready to transform your business?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mr-3 mt-1">
@@ -63,7 +63,7 @@ const Hero = () => {
                 </li>
               </ul>
               <a href="#contact">
-                <Button className="bg-it-accent hover:bg-amber-600 text-white font-bold w-full mt-6">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full mt-6">
                   Request Consultation
                 </Button>
               </a>
