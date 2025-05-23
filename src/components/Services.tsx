@@ -1,18 +1,32 @@
+
 import React from 'react';
 import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key, HeadsetIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ 
   icon: Icon, 
   title, 
   description, 
-  ctaText 
+  ctaText,
+  link
 }: { 
   icon: React.ElementType; 
   title: string; 
   description: string; 
   ctaText: string;
+  link?: string;
 }) => {
+  const ButtonComponent = link ? (
+    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full" asChild>
+      <Link to={link}>{ctaText}</Link>
+    </Button>
+  ) : (
+    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full">
+      {ctaText}
+    </Button>
+  );
+
   return (
     <div className="service-card flex flex-col h-full">
       <div className="bg-it-blue/10 inline-flex p-3 rounded-lg mb-4">
@@ -20,9 +34,7 @@ const ServiceCard = ({
       </div>
       <h3 className="text-xl font-bold mb-2 text-gray-900">{title}</h3>
       <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-      <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full">
-        {ctaText}
-      </Button>
+      {ButtonComponent}
     </div>
   );
 };
@@ -33,7 +45,8 @@ const Services = () => {
       icon: Server,
       title: 'Website Hosting',
       description: 'Establishing a strong online presence starts with the right domain name and reliable website hosting.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/website-hosting'
     },
     {
       icon: Globe,
@@ -121,6 +134,7 @@ const Services = () => {
               title={service.title} 
               description={service.description}
               ctaText={service.ctaText}
+              link={service.link}
             />
           ))}
         </div>
