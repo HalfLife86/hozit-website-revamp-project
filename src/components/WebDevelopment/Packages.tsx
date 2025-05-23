@@ -85,7 +85,7 @@ const WebDevPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/cart.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-design-packages/basic-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -122,7 +122,7 @@ const WebDevPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/cart.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-design-packages/standard-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -156,7 +156,7 @@ const WebDevPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/cart.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-design-packages/advanced-basic-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -175,3 +175,4 @@ const WebDevPackages = () => {
 };
 
 export default WebDevPackages;
+
