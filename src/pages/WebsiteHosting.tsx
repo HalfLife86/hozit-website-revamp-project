@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -174,12 +173,12 @@ const WebsiteHosting = () => {
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-28 pb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <section className="pt-28 pb-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Domain Registration and Website Hosting</h1>
               <p className="text-xl mb-8">Establishing a strong online presence starts with the right domain name and reliable website hosting. At Hozit Domain Hosting, we offer comprehensive solutions to help you secure the perfect domain name and ensure your website remains accessible and responsive to your audience.</p>
-              <Button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg">Get Started</Button>
+              <Button className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg">Get Started</Button>
             </div>
           </div>
         </section>
@@ -189,16 +188,16 @@ const WebsiteHosting = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="p-6 rounded-lg border border-gray-200">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Server className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                  <Server className="h-8 w-8 text-orange-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-3">Website Hosting Solutions</h3>
                 <p className="text-gray-600">Reliable website hosting is essential for ensuring your website is accessible to visitors around the clock. Our hosting solutions are designed to deliver exceptional performance, security, and scalability for websites of all sizes. Whether you're launching a personal blog, an e-commerce store, or a corporate website, we offer hosting plans tailored to your specific needs and budget.</p>
               </div>
               
               <div className="p-6 rounded-lg border border-gray-200">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Database className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                  <Database className="h-8 w-8 text-orange-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-3">Domain Registration Services</h3>
                 <p className="text-gray-600">Choosing the right domain name is crucial as it represents your brand identity on the web. Our domain registration services simplify the process of securing your desired domain name, whether it's a traditional .co.za, .com, .net, or a niche-specific extension. Our user-friendly interface allows you to search for available domain names and register them with ease.</p>
@@ -208,7 +207,7 @@ const WebsiteHosting = () => {
         </section>
 
         {/* Hosting Plans Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-orange-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-4">Hosting Plans</h2>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Choose the perfect hosting plan for your needs. All plans include 24/7 support, free SSL, and security features.</p>
@@ -352,8 +351,8 @@ const WebsiteHosting = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {keyFeatures.map((feature, index) => (
                 <div key={index} className="p-6 rounded-lg border border-gray-200 flex flex-col items-start">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-orange-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
@@ -364,7 +363,7 @@ const WebsiteHosting = () => {
         </section>
 
         {/* Domain Management Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-orange-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -398,7 +397,7 @@ const WebsiteHosting = () => {
                 <h3 className="text-2xl font-bold mb-6 text-center">Have Additional Questions?</h3>
                 <p className="text-center text-gray-600 mb-6">Feel Free to Consult with us over a Live Chat or Ticket System</p>
                 <div className="flex justify-center">
-                  <Button className="bg-it-blue hover:bg-it-blue-light text-white px-8 py-3">Contact with us</Button>
+                  <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">Contact with us</Button>
                 </div>
               </div>
             </div>
@@ -406,15 +405,15 @@ const WebsiteHosting = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-blue-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Let Hozit Domain Hosting Power Your Online Presence</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Whether you're launching a new website or looking to enhance your existing online presence, Hozit Domain Hosting has the expertise and resources to help you succeed. Secure your domain name, choose a hosting plan that meets your needs, and embark on your digital journey with confidence.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">Contact Sales</Button>
-              <Button className="bg-amber-500 hover:bg-amber-600 text-white">Sign Up Now</Button>
+              <Button className="bg-white text-orange-600 hover:bg-gray-100">Contact Sales</Button>
+              <Button className="bg-black hover:bg-gray-800 text-white">Sign Up Now</Button>
             </div>
           </div>
         </section>
