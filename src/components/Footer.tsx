@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -92,8 +92,8 @@ const Footer = () => {
               © {currentYear} HozIT. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
+              <Link to="/terms-of-service" className="text-sm text-black hover:text-gray-700 transition-colors">Terms of Service</Link>
               <a href="#" className="text-sm text-black hover:text-gray-700 transition-colors">Privacy Policy</a>
-              <a href="#" className="text-sm text-black hover:text-gray-700 transition-colors">Terms of Service</a>
               <a href="#" className="text-sm text-black hover:text-gray-700 transition-colors">Sitemap</a>
             </div>
           </div>
