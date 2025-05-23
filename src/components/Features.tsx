@@ -143,6 +143,22 @@ const Features = () => {
           </div>
         </div>
         
+        {/* Years of Experience Section with Orange Background */}
+        <div className="bg-it-accent text-black rounded-lg p-8 md:p-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-4xl md:text-5xl font-bold mb-4 text-black">10+</h3>
+              <h4 className="text-2xl md:text-3xl font-bold mb-4 text-black">Years of Experience</h4>
+              <p className="text-black">
+                With over a decade of industry experience, HozIT has consistently delivered exceptional IT solutions to businesses across South Africa. Our seasoned team brings expertise, reliability, and innovation to every project we undertake.
+              </p>
+            </div>
+            <div className="hidden md:flex justify-center">
+              <Clock className="h-32 w-32 text-black opacity-20" />
+            </div>
+          </div>
+        </div>
+        
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Our Partners</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
