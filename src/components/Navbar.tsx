@@ -36,7 +36,7 @@ const Navbar = () => {
   // Determine which logo to display based on scroll state
   const logoSrc = isScrolled 
     ? "/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" // Original logo for white background
-    : "/lovable-uploads/c03573d3-cab6-4fcb-9bca-485ca653719e.png"; // New logo for orange hero sections
+    : "/lovable-uploads/03851d91-e80c-415c-a2ab-43d544d4a905.png"; // New logo with .co.za for orange hero sections
 
   return (
     <nav
