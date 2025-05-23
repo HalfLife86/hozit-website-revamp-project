@@ -10,6 +10,7 @@ import DomainRegistration from "./pages/DomainRegistration";
 import WebDevelopment from "./pages/WebDevelopment";
 import SEO from "./pages/SEO";
 import Cybersecurity from "./pages/Cybersecurity";
+import ITSupport from "./pages/ITSupport";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/web-development" element={<WebDevelopment />} />
           <Route path="/seo" element={<SEO />} />
           <Route path="/cybersecurity" element={<Cybersecurity />} />
+          <Route path="/it-support" element={<ITSupport />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
