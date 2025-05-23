@@ -36,7 +36,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-it-blue">HOZ<span className="text-it-accent">IT</span></span>
+              <img 
+                src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
+                alt="HozIT Logo" 
+                className="h-10 md:h-12"
+              />
             </a>
           </div>
 

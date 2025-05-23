@@ -9,7 +9,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">HOZ<span className="text-it-accent">IT</span></h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
+                alt="HozIT Logo" 
+                className="h-12"
+              />
+            </div>
             <p className="text-gray-400 mb-4">
               Providing professional IT solutions and services to businesses of all sizes.
             </p>
