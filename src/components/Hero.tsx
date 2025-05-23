@@ -62,9 +62,11 @@ const Hero = () => {
                   <span className="text-gray-700">Cloud Services</span>
                 </li>
               </ul>
-              <Button className="btn-primary w-full mt-6">
-                Request Consultation
-              </Button>
+              <a href="#contact">
+                <Button className="bg-it-accent hover:bg-amber-600 text-white font-bold w-full mt-6">
+                  Request Consultation
+                </Button>
+              </a>
             </div>
           </div>
         </div>

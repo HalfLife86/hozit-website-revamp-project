@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactInfo = ({ icon: Icon, title, content }: { icon: React.ElementType; title: string; content: string }) => {
   return (
@@ -18,10 +19,44 @@ const ContactInfo = ({ icon: Icon, title, content }: { icon: React.ElementType; 
 };
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log("Form submitted");
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    setTimeout(() => {
+      console.log("Form submitted with data:", formData);
+      console.log("Email would be sent to: info@hozit.co.za");
+      
+      // Show success message
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   return (
@@ -94,7 +129,9 @@ const Contact = () => {
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                     <input 
                       type="text" 
-                      id="name" 
+                      id="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-it-blue focus:border-it-blue"
                       required
                     />
@@ -103,7 +140,9 @@ const Contact = () => {
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                     <input 
                       type="email" 
-                      id="email" 
+                      id="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-it-blue focus:border-it-blue"
                       required
                     />
@@ -114,7 +153,9 @@ const Contact = () => {
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
                   <input 
                     type="text" 
-                    id="subject" 
+                    id="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-it-blue focus:border-it-blue"
                   />
                 </div>
@@ -123,14 +164,20 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                   <textarea 
                     id="message" 
-                    rows={5} 
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-it-blue focus:border-it-blue"
                     required
                   ></textarea>
                 </div>
                 
-                <Button type="submit" className="btn-primary w-full">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="bg-it-blue hover:bg-blue-700 text-white w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
