@@ -47,13 +47,13 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/website-hosting" className="nav-link">Website Hosting</Link>
-            <Link to="/domain-registration" className="nav-link">Domain Registration</Link>
-            <Link to="/web-development" className="nav-link">Web Development</Link>
-            <Link to="/seo" className="nav-link">SEO</Link>
-            <Link to="/cybersecurity" className="nav-link">Cybersecurity</Link>
-            <a href="#contact" className="nav-link">Contact</a>
+            <Link to="/" className="nav-link text-black">Home</Link>
+            <Link to="/website-hosting" className="nav-link text-black">Website Hosting</Link>
+            <Link to="/domain-registration" className="nav-link text-black">Domain Registration</Link>
+            <Link to="/web-development" className="nav-link text-black">Web Development</Link>
+            <Link to="/seo" className="nav-link text-black">SEO</Link>
+            <Link to="/cybersecurity" className="nav-link text-black">Cybersecurity</Link>
+            <a href="#contact" className="nav-link text-black">Contact</a>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-it-blue"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-it-blue"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" aria-hidden="true" />
@@ -77,13 +77,13 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white rounded-lg mt-2 shadow-lg animate-fade-in">
-              <Link to="/" className="nav-link block px-3 py-2">Home</Link>
-              <Link to="/website-hosting" className="nav-link block px-3 py-2">Website Hosting</Link>
-              <Link to="/domain-registration" className="nav-link block px-3 py-2">Domain Registration</Link>
-              <Link to="/web-development" className="nav-link block px-3 py-2">Web Development</Link>
-              <Link to="/seo" className="nav-link block px-3 py-2">SEO</Link>
-              <Link to="/cybersecurity" className="nav-link block px-3 py-2">Cybersecurity</Link>
-              <a href="#contact" className="nav-link block px-3 py-2">Contact</a>
+              <Link to="/" className="nav-link text-black block px-3 py-2">Home</Link>
+              <Link to="/website-hosting" className="nav-link text-black block px-3 py-2">Website Hosting</Link>
+              <Link to="/domain-registration" className="nav-link text-black block px-3 py-2">Domain Registration</Link>
+              <Link to="/web-development" className="nav-link text-black block px-3 py-2">Web Development</Link>
+              <Link to="/seo" className="nav-link text-black block px-3 py-2">SEO</Link>
+              <Link to="/cybersecurity" className="nav-link text-black block px-3 py-2">Cybersecurity</Link>
+              <a href="#contact" className="nav-link text-black block px-3 py-2">Contact</a>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>
           </div>
