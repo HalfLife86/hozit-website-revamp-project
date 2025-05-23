@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, X, Instagram, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactInfo = ({ icon: Icon, title, content }: { icon: React.ElementType; title: string; content: string }) => {
@@ -102,7 +102,7 @@ const Contact = () => {
                     <Facebook className="w-5 h-5 text-black" />
                   </a>
                   <a href="https://x.com/hozit_sa" target="_blank" rel="noopener noreferrer" className="p-2 bg-black/10 rounded-full hover:bg-black/20 transition-colors">
-                    <Twitter className="w-5 h-5 text-black" />
+                    <X className="w-5 h-5 text-black" />
                   </a>
                   <a href="https://www.instagram.com/hozit_sa/" target="_blank" rel="noopener noreferrer" className="p-2 bg-black/10 rounded-full hover:bg-black/20 transition-colors">
                     <Instagram className="w-5 h-5 text-black" />

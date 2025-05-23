@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, X, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,7 +25,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://x.com/hozit_sa" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
-                <Twitter className="w-5 h-5" />
+                <X className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/hozit_sa/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
                 <Instagram className="w-5 h-5" />
