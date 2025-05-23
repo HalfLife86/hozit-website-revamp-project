@@ -97,9 +97,6 @@ const Navbar = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/software-licensing" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Software Licensing</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/terms-of-service" className="w-full px-3 py-2 hover:bg-orange-100 rounded font-medium">Terms of Service</Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -144,7 +141,6 @@ const Navbar = () => {
                 <Link to="/microsoft-365" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Microsoft 365 Setup</Link>
                 <Link to="/computer-hardware" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Computer Hardware</Link>
                 <Link to="/software-licensing" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Software Licensing</Link>
-                <Link to="/terms-of-service" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Terms of Service</Link>
               </div>
               
               <a href="#contact" className="nav-link text-black font-bold block px-3 py-2">Contact</a>
