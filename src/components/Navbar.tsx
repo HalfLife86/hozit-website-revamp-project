@@ -88,6 +88,9 @@ const Navbar = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/network-design" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Network Design</Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/microsoft-365" className="w-full px-3 py-2 hover:bg-orange-100 rounded">Microsoft 365 Setup</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -129,6 +132,7 @@ const Navbar = () => {
                 <Link to="/server-support" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Server Support</Link>
                 <Link to="/app-development" className="nav-link text-black block px-3 py-1 pl-6 text-sm">APP Development</Link>
                 <Link to="/network-design" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Network Design</Link>
+                <Link to="/microsoft-365" className="nav-link text-black block px-3 py-1 pl-6 text-sm">Microsoft 365 Setup</Link>
               </div>
               
               <a href="#contact" className="nav-link text-black block px-3 py-2">Contact</a>

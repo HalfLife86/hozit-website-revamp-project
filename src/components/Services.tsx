@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key, HeadsetIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -58,49 +59,57 @@ const Services = () => {
       icon: Monitor,
       title: 'Website Development',
       description: 'In today\'s digital world, your website serves as the cornerstone of your online presence, acting as a virtual storefront and a platform for engaging with your audience.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/web-development'
     },
     {
       icon: Search,
       title: 'SEO',
       description: 'In the vast digital landscape, standing out amidst the competition requires more than just a stunning website—it demands strategic visibility.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/seo'
     },
     {
       icon: Shield,
       title: 'Cyber Security',
       description: 'In today\'s digital landscape, safeguarding your organization against cyber threats is paramount.',
-      ctaText: 'Compare Plans'
+      ctaText: 'Compare Plans',
+      link: '/cybersecurity'
     },
     {
       icon: HeadsetIcon,
       title: 'IT Support',
       description: 'Navigating the complexities of IT infrastructure can be daunting, but with Hozit Domain Hosting\'s comprehensive IT technical support services.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/it-support'
     },
     {
       icon: Database,
       title: 'Server Support',
       description: 'Servers come in various configurations, each requiring specialized support to ensure optimal performance and reliability.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/server-support'
     },
     {
       icon: Smartphone,
       title: 'APP Development',
       description: 'If you are looking for a Developer to professionally build a mobile application for iOS & Android (iPhone, iPad, Android). You are at the right place.',
-      ctaText: 'Compare Plans'
+      ctaText: 'Compare Plans',
+      link: '/app-development'
     },
     {
       icon: Network,
       title: 'Network Design',
       description: 'A robust and well-designed network forms the backbone of your IT infrastructure, enabling seamless communication, across your organization.',
-      ctaText: 'Compare Packages'
+      ctaText: 'Compare Packages',
+      link: '/network-design'
     },
     {
       icon: Mail,
       title: 'Microsoft 365 Setup and Migration',
       description: 'Seamlessly transition your business to Microsoft 365 with our expert setup and migration services. We handle everything from account configuration to data migration, ensuring zero downtime and enhanced productivity.',
-      ctaText: 'Learn More'
+      ctaText: 'Learn More',
+      link: '/microsoft-365'
     },
     {
       icon: Laptop,

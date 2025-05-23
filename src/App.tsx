@@ -14,6 +14,7 @@ import ITSupport from "./pages/ITSupport";
 import ServerSupport from "./pages/ServerSupport";
 import AppDevelopment from "./pages/AppDevelopment";
 import NetworkDesign from "./pages/NetworkDesign";
+import Microsoft365 from "./pages/Microsoft365";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/server-support" element={<ServerSupport />} />
           <Route path="/app-development" element={<AppDevelopment />} />
           <Route path="/network-design" element={<NetworkDesign />} />
+          <Route path="/microsoft-365" element={<Microsoft365 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
