@@ -5,8 +5,8 @@ import { ArrowRight } from 'lucide-react';
 
 const Microsoft365Hero = () => {
   return (
-    <section className="pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">

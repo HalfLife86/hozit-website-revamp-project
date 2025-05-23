@@ -5,8 +5,8 @@ import { ArrowRight } from 'lucide-react';
 
 const NetworkDesignHero = () => {
   return (
-    <section className="pt-32 pb-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -18,7 +18,7 @@ const NetworkDesignHero = () => {
             <p className="text-white mb-8">
               A robust and well-designed network forms the backbone of your IT infrastructure, enabling seamless communication, collaboration, and data exchange across your organization. At Hozit Domain Hosting, we offer comprehensive network design and implementation services to help you build a secure, reliable, and scalable network infrastructure that meets your business needs and supports your growth objectives.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"

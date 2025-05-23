@@ -5,18 +5,18 @@ import { ArrowRight, Server } from 'lucide-react';
 
 const ServerSupportHero = () => {
   return (
-    <section className="pt-32 pb-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-24 md:pt-32 pb-20 md:pb-32 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Server <span className="text-black">Support</span></h1>
-            <p className="text-lg mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Server <span className="text-black">Support</span></h1>
+            <p className="text-lg mb-8 text-white">
               Servers come in various configurations, each requiring specialized support to ensure optimal performance and reliability. 
               At Hozit Domain Hosting, we provide comprehensive server support services for a wide range of operating systems, 
               including Windows, Linux, and other server OS platforms. Our dedicated team of experts is committed to keeping your server 
               environment running smoothly and securely, regardless of the operating system you choose.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
