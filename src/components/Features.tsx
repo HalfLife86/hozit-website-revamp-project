@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CheckCircle, Server, ArrowRight, Shield, Users, Database, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -21,8 +22,8 @@ const FeatureCard = ({ icon: Icon, title, description }: { icon: React.ElementTy
 const GuaranteeItem = ({ text }: { text: string }) => {
   return (
     <div className="flex items-center mb-4">
-      <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-      <span className="text-gray-700">{text}</span>
+      <CheckCircle className="h-5 w-5 text-black mr-2" />
+      <span className="text-black">{text}</span>
     </div>
   );
 };
@@ -96,11 +97,11 @@ const Features = () => {
           ))}
         </div>
         
-        <div className="bg-it-blue text-white rounded-lg p-8 md:p-12 mb-16">
+        <div className="bg-it-accent text-black rounded-lg p-8 md:p-12 mb-16">
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Hozit Guarantees</h3>
-              <p className="mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">Hozit Guarantees</h3>
+              <p className="mb-6 text-black">
                 We are proud to guarantee a quality hosting experience or your money back. 
                 A guarantee based on reality… who would have thought?!
               </p>
@@ -111,12 +112,12 @@ const Features = () => {
                 ))}
               </div>
               
-              <Button className="mt-6 bg-white text-it-blue hover:bg-gray-100">
+              <Button className="mt-6 bg-white text-black hover:bg-gray-100">
                 View All Guarantees
               </Button>
             </div>
             <div className="hidden md:block">
-              <Shield className="h-32 w-32 mx-auto text-white opacity-20" />
+              <Shield className="h-32 w-32 mx-auto text-black opacity-20" />
             </div>
           </div>
         </div>
