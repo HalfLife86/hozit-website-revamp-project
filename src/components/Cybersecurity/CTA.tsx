@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CybersecurityCTA = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+    <section className="py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Cyber Security</h2>
@@ -17,7 +17,7 @@ const CybersecurityCTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50"
+              className="bg-white text-orange-600 hover:bg-orange-50"
               asChild
             >
               <a href="#packages">
@@ -27,7 +27,7 @@ const CybersecurityCTA = () => {
             <Button 
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700"
+              className="border-white text-white hover:bg-orange-700"
               asChild
             >
               <a 
