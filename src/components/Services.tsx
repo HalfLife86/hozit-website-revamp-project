@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key } from 'lucide-react';
+import { Server, Globe, Shield, Monitor, Database, Search, Smartphone, Network, Mail, Laptop, Package, Key, HeadsetIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ServiceCard = ({ 
@@ -61,7 +60,7 @@ const Services = () => {
       ctaText: 'Compare Plans'
     },
     {
-      icon: Mail,
+      icon: HeadsetIcon,
       title: 'IT Support',
       description: 'Navigating the complexities of IT infrastructure can be daunting, but with Hozit Domain Hosting\'s comprehensive IT technical support services.',
       ctaText: 'Compare Packages'
