@@ -12,13 +12,16 @@ import { DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const domainPricing = [
-  { extension: '.com', price: 289, popular: true, description: 'Global Standard' },
-  { extension: '.co.za', price: 149, popular: false, description: 'South African' },
-  { extension: '.net', price: 319, popular: false, description: 'Networks' },
-  { extension: '.org', price: 319, popular: false, description: 'Organizations' },
-  { extension: '.info', price: 339, popular: false, description: 'Information' },
-  { extension: '.africa', price: 599, popular: false, description: 'African Continent' },
-  { extension: '.io', price: 899, popular: false, description: 'Tech Companies' },
+  { extension: '.com', price: 240.08, popular: true, description: 'Global Standard' },
+  { extension: '.org', price: 240.08, popular: false, description: 'Organizations' },
+  { extension: '.net', price: 288.36, popular: false, description: 'Networks' },
+  { extension: '.biz', price: 427.20, popular: false, description: 'Business' },
+  { extension: '.info', price: 444.29, popular: false, description: 'Information' },
+  { extension: '.mobi', price: 555.36, popular: false, description: 'Mobile Websites' },
+  { extension: '.online', price: 360.00, popular: false, description: 'Modern Websites' },
+  { extension: '.site', price: 598.08, popular: false, description: 'General Websites' },
+  { extension: '.xyz', price: 249.91, popular: false, description: 'Modern & Versatile' },
+  { extension: '.co.za', price: 100.80, popular: true, description: 'South African' },
 ];
 
 const DomainPricing = () => {
@@ -58,8 +61,7 @@ const DomainPricing = () => {
                   <TableCell>{domain.description}</TableCell>
                   <TableCell className="text-right">
                     <div className="flex items-center justify-end">
-                      <DollarSign className="h-4 w-4 text-gray-500 mr-1" />
-                      <span>R {domain.price}</span>
+                      <span>R {domain.price.toFixed(2)}</span>
                     </div>
                   </TableCell>
                   <TableCell>
