@@ -93,7 +93,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/terms-of-service" className="text-sm text-black hover:text-gray-700 transition-colors">Terms of Service</Link>
-              <a href="#" className="text-sm text-black hover:text-gray-700 transition-colors">Privacy Policy</a>
+              <Link to="/privacy-policy" className="text-sm text-black hover:text-gray-700 transition-colors">Privacy Policy</Link>
               <a href="#" className="text-sm text-black hover:text-gray-700 transition-colors">Sitemap</a>
             </div>
           </div>
