@@ -21,16 +21,13 @@ const WebDevHero = () => {
               we understand the importance of having a professional and effective website that not only attracts 
               visitors but also converts them into loyal customers.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div>
               <Button 
                 size="lg" 
                 className="bg-black hover:bg-gray-800 text-white font-bold"
                 asChild
               >
                 <a href="#packages">View Our Packages <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-                Learn More
               </Button>
             </div>
           </div>
