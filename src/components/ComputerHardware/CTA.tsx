@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
 const ComputerHardwareCTA = () => {
   return (
@@ -12,14 +10,6 @@ const ComputerHardwareCTA = () => {
           <p className="text-lg mb-8">
             Whether you need a single workstation or a complete office setup, our hardware experts are ready to provide the right solutions for your business needs. Contact us today for a consultation and personalized quote.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
-              Contact Our Hardware Team <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600">
-              View All Solutions
-            </Button>
-          </div>
         </div>
       </div>
     </section>
