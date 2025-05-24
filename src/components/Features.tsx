@@ -78,7 +78,7 @@ const Features = () => {
     },
     { 
       name: 'HP', 
-      logoUrl: '/lovable-uploads/2990190c-f09a-48ce-b6b2-27a878e5f6cd.png' 
+      logoUrl: '/lovable-uploads/b93be82d-912f-446a-be1a-5ec74f478bf4.png' 
     },
     { 
       name: 'Cisco', 
