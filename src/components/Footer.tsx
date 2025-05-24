@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, X, Instagram, Linkedin } from 'lucide-react';
@@ -48,22 +49,22 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-black">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">IT Support</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Cloud Services</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Cybersecurity</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Data Management</a></li>
+              <li><Link to="/it-support" className="text-black hover:text-gray-700 transition-colors">IT Support</Link></li>
+              <li><Link to="/website-hosting" className="text-black hover:text-gray-700 transition-colors">Cloud Services</Link></li>
+              <li><Link to="/cybersecurity" className="text-black hover:text-gray-700 transition-colors">Cybersecurity</Link></li>
+              <li><Link to="/web-development" className="text-black hover:text-gray-700 transition-colors">Web Development</Link></li>
+              <li><Link to="/website-hosting" className="text-black hover:text-gray-700 transition-colors">Data Management</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4 text-black">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-black hover:text-gray-700 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Our Team</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Careers</a></li>
-              <li><a href="#" className="text-black hover:text-gray-700 transition-colors">Blog</a></li>
-              <li><a href="#contact" className="text-black hover:text-gray-700 transition-colors">Contact</a></li>
+              <li><Link to="/#about" className="text-black hover:text-gray-700 transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="text-black hover:text-gray-700 transition-colors">Our Team</Link></li>
+              <li><a href="https://www.hozit.co.za/whmcs/contact.php" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">Careers</a></li>
+              <li><a href="https://www.hozit.co.za/whmcs/index.php?rp=/announcements" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">Blog</a></li>
+              <li><Link to="/contact" className="text-black hover:text-gray-700 transition-colors">Contact</Link></li>
             </ul>
           </div>
           
