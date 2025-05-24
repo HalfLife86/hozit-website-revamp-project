@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ContactHero from '@/components/Contact/ContactHero';
 import ContactContent from '@/components/Contact/ContactContent';
 
 const Contact = () => {
@@ -14,6 +15,7 @@ const Contact = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
+        <ContactHero />
         <ContactContent />
       </main>
       <Footer />
