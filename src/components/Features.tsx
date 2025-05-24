@@ -69,32 +69,44 @@ const Features = () => {
 
   const partners = [
     { 
-      name: 'Cisco', 
-      logoUrl: 'https://www.cisco.com/c/dam/en/us/td/i/200/203/2039/n_cisco-logo-blue-no-tagline_gif.gif' 
+      name: 'Microsoft', 
+      logoUrl: '/lovable-uploads/5450c8c7-3fff-4a97-b62c-19d686142c56.png' 
     },
     { 
-      name: 'CloudLinux', 
-      logoUrl: 'https://www.cloudlinux.com/images/cl-logo.png' 
+      name: 'Dell Technologies', 
+      logoUrl: '/lovable-uploads/a161ee1c-2919-4420-bf46-bed4a6983290.png' 
+    },
+    { 
+      name: 'HP', 
+      logoUrl: '/lovable-uploads/2990190c-f09a-48ce-b6b2-27a878e5f6cd.png' 
+    },
+    { 
+      name: 'Cisco', 
+      logoUrl: '/lovable-uploads/143d2c9f-a431-4c2f-a44b-052af952a2dc.png' 
     },
     { 
       name: 'cPanel', 
-      logoUrl: 'https://cpanel.net/wp-content/themes/cPbase/assets/img/cpanel-logo.svg' 
+      logoUrl: '/lovable-uploads/d9b638ce-4bfc-4cee-86bf-852b2b1cbffc.png' 
     },
     { 
-      name: 'Dell', 
-      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/1200px-Dell_logo_2016.svg.png' 
-    },
-    { 
-      name: 'Imunify360', 
-      logoUrl: 'https://www.imunify360.com/images/logo-imunify360.svg' 
-    },
-    { 
-      name: 'JetBackup', 
-      logoUrl: 'https://jetbackup.com/wp-content/uploads/2020/03/jetbackup_logo.svg' 
+      name: 'Veeam', 
+      logoUrl: '/lovable-uploads/6d911ff7-515b-4f72-b157-430513c3b0ea.png' 
     },
     { 
       name: 'Lenovo', 
-      logoUrl: 'https://logos-world.net/wp-content/uploads/2020/11/Lenovo-Logo.png' 
+      logoUrl: '/lovable-uploads/95846a87-c713-48b1-b054-5a5dfa9e1af6.png' 
+    },
+    { 
+      name: 'Kaspersky', 
+      logoUrl: '/lovable-uploads/17c0198e-193f-4903-ba2f-7aed547bbc2e.png' 
+    },
+    { 
+      name: 'ESET', 
+      logoUrl: '/lovable-uploads/c38c6447-b355-46fc-ae46-a1ef3d5a7c0e.png' 
+    },
+    { 
+      name: 'N-Able', 
+      logoUrl: '/lovable-uploads/1b3f92ab-3cd3-4627-a434-fb7d2be60e78.png' 
     }
   ];
 
@@ -145,7 +157,7 @@ const Features = () => {
         
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Our Partners</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
             {partners.map((partner, index) => (
               <PartnerLogo key={index} name={partner.name} logoUrl={partner.logoUrl} />
             ))}
