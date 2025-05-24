@@ -105,6 +105,7 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Link to="/blog" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Blog</Link>
             <Link to="/contact" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Contact</Link>
             <Button className="btn-primary ml-4">Get Quote</Button>
           </div>
@@ -148,6 +149,7 @@ const Navbar = () => {
                 <Link to="/software-licensing" className="nav-link text-black font-medium block px-3 py-1 pl-6 text-sm">Software Licensing</Link>
               </div>
               
+              <Link to="/blog" className="nav-link text-black font-bold block px-3 py-2">Blog</Link>
               <Link to="/contact" className="nav-link text-black font-bold block px-3 py-2">Contact</Link>
               <Button className="btn-primary mt-2 w-full">Get Quote</Button>
             </div>

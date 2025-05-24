@@ -21,6 +21,7 @@ import Contact from "./pages/Contact";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Sitemap from "./pages/Sitemap";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/computer-hardware" element={<ComputerHardware />} />
           <Route path="/software-licensing" element={<SoftwareLicensing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />

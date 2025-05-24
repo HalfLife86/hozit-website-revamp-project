@@ -63,7 +63,7 @@ const Footer = () => {
               <li><Link to="/#about" className="text-black hover:text-gray-700 transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="text-black hover:text-gray-700 transition-colors">Our Team</Link></li>
               <li><a href="https://www.hozit.co.za/whmcs/contact.php" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">Careers</a></li>
-              <li><a href="https://www.hozit.co.za/whmcs/index.php?rp=/announcements" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">Blog</a></li>
+              <li><Link to="/blog" className="text-black hover:text-gray-700 transition-colors">Blog</Link></li>
               <li><Link to="/contact" className="text-black hover:text-gray-700 transition-colors">Contact</Link></li>
             </ul>
           </div>
