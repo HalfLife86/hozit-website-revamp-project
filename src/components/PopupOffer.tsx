@@ -23,9 +23,9 @@ const PopupOffer = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-[90vw] sm:max-w-lg md:max-w-2xl lg:max-w-3xl p-0 border-4 border-[#ff6600] rounded-xl overflow-y-auto max-h-[90vh]">
+      <DialogContent className="max-w-[90vw] sm:max-w-lg md:max-w-2xl lg:max-w-3xl p-0 border-4 border-it-accent rounded-xl overflow-y-auto max-h-[90vh]">
         <div className="bg-white p-4 sm:p-6 rounded-lg font-sans text-black">
-          <h2 className="text-center text-[#ff6600] text-xl sm:text-2xl font-bold">🚀 Get a .co.za Domain + 12 Months Hosting for R199!</h2>
+          <h2 className="text-center text-it-accent text-xl sm:text-2xl font-bold">🚀 Get a .co.za Domain + 12 Months Hosting for R199!</h2>
           <p className="text-center text-base sm:text-lg text-gray-800 mt-2">🔥 <strong>Limited to the first 1000 customers</strong></p>
 
           <hr className="border-t-2 border-black my-3 sm:my-5" />
@@ -55,7 +55,7 @@ const PopupOffer = () => {
               href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/199-package" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#ff6600] text-white px-4 sm:px-7 py-2 sm:py-3 text-base sm:text-lg rounded-lg font-bold shadow-lg hover:bg-orange-500 transition-colors"
+              className="inline-block bg-it-accent text-white px-4 sm:px-7 py-2 sm:py-3 text-base sm:text-lg rounded-lg font-bold shadow-lg hover:bg-orange-500 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               👉 Claim This Offer Now
