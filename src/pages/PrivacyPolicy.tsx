@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PrivacyContent from '@/components/PrivacyPolicy/PrivacyContent';
+import PrivacyPolicyHero from '@/components/PrivacyPolicy/PrivacyPolicyHero';
 
 const PrivacyPolicy = () => {
   // Update document title
@@ -13,7 +14,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-24">
+      <main className="flex-grow">
+        <PrivacyPolicyHero />
         <PrivacyContent />
       </main>
       <Footer />
