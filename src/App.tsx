@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -25,6 +26,11 @@ import NotFound from "./pages/NotFound";
 import WebsiteHostingBlog from "./pages/BlogPosts/WebsiteHostingBlog";
 import DomainRegistrationBlog from "./pages/BlogPosts/DomainRegistrationBlog";
 import CybersecurityBlog from "./pages/BlogPosts/CybersecurityBlog";
+import SEOStrategiesBlog from "./pages/BlogPosts/SEOStrategiesBlog";
+import WebDevelopmentTrendsBlog from "./pages/BlogPosts/WebDevelopmentTrendsBlog";
+import ManagedITSupportBlog from "./pages/BlogPosts/ManagedITSupportBlog";
+import CloudServerSolutionsBlog from "./pages/BlogPosts/CloudServerSolutionsBlog";
+import MobileAppDevelopmentBlog from "./pages/BlogPosts/MobileAppDevelopmentBlog";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +60,11 @@ const App = () => (
           <Route path="/blog/website-hosting" element={<WebsiteHostingBlog />} />
           <Route path="/blog/domain-registration" element={<DomainRegistrationBlog />} />
           <Route path="/blog/cybersecurity-best-practices" element={<CybersecurityBlog />} />
+          <Route path="/blog/seo-strategies" element={<SEOStrategiesBlog />} />
+          <Route path="/blog/web-development-trends" element={<WebDevelopmentTrendsBlog />} />
+          <Route path="/blog/managed-it-support" element={<ManagedITSupportBlog />} />
+          <Route path="/blog/cloud-server-solutions" element={<CloudServerSolutionsBlog />} />
+          <Route path="/blog/mobile-app-development" element={<MobileAppDevelopmentBlog />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />
