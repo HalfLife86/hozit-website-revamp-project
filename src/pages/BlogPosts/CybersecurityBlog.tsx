@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -32,8 +33,8 @@ const CybersecurityBlog = () => {
               </Link>
               
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-                alt="Cybersecurity"
+                src="/lovable-uploads/eeb2046c-2163-405d-961b-abb577cfd030.png"
+                alt="Cybersecurity Best Practices"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6 shadow-lg"
               />
               
