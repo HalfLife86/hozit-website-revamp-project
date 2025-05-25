@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import BlogPostHero from '@/components/Blog/BlogPostHero';
+import Hero from '@/components/Hero';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -19,17 +19,50 @@ const WebsiteHostingBlog = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <BlogPostHero
-          title="Why Your Business Needs Professional Website Hosting"
-          date="May 20, 2025"
-          author="HozIT Team"
-          category="Website Hosting"
-          imageUrl="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
-          imageAlt="Website Hosting"
-        />
+        <Hero />
         
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <Link to="/blog" className="inline-flex items-center text-orange-500 hover:text-orange-600 mb-6">
+                <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to Blog
+              </Link>
+              
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+                alt="Website Hosting"
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6 shadow-lg"
+              />
+              
+              <div className="flex items-center text-sm text-gray-500 mb-4 flex-wrap gap-4">
+                <div className="flex items-center">
+                  <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span>May 20, 2025</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <span>HozIT Team</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.99 1.99 0 013 12V7a4 4 0 014-4z" />
+                  </svg>
+                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs">Website Hosting</span>
+                </div>
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+                Why Your Business Needs Professional Website Hosting
+              </h1>
+            </div>
+            
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-8">
                 In today's digital landscape, your website is often the first point of contact between your business and potential customers. The hosting solution you choose can make or break your online presence.
