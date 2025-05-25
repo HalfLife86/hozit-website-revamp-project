@@ -33,7 +33,7 @@ const SEOStrategiesBlog = () => {
               </Link>
               
               <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+                src="/lovable-uploads/f7f34629-fc35-4fb8-a384-109e4b6092f8.png"
                 alt="SEO Strategies"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6 shadow-lg"
               />
