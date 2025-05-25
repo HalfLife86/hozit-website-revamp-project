@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,6 +22,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Sitemap from "./pages/Sitemap";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
+import WebsiteHostingBlog from "./pages/BlogPosts/WebsiteHostingBlog";
+import DomainRegistrationBlog from "./pages/BlogPosts/DomainRegistrationBlog";
+import CybersecurityBlog from "./pages/BlogPosts/CybersecurityBlog";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +50,10 @@ const App = () => (
           <Route path="/software-licensing" element={<SoftwareLicensing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          {/* Blog post routes */}
+          <Route path="/blog/website-hosting" element={<WebsiteHostingBlog />} />
+          <Route path="/blog/domain-registration" element={<DomainRegistrationBlog />} />
+          <Route path="/blog/cybersecurity-best-practices" element={<CybersecurityBlog />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />

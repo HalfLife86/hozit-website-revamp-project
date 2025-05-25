@@ -14,7 +14,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 20, 2025',
     tags: ['Hosting', 'Performance', 'Uptime'],
-    link: '/website-hosting'
+    link: '/blog/website-hosting'
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 18, 2025',
     tags: ['Domains', 'Branding', 'SEO'],
-    link: '/domain-registration'
+    link: '/blog/domain-registration'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 15, 2025',
     tags: ['Web Design', 'Development', 'Trends'],
-    link: '/web-development'
+    link: '/blog/web-development-trends'
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 12, 2025',
     tags: ['SEO', 'Marketing', 'Rankings'],
-    link: '/seo'
+    link: '/blog/seo-strategies'
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 10, 2025',
     tags: ['Security', 'Protection', 'Data'],
-    link: '/cybersecurity'
+    link: '/blog/cybersecurity-best-practices'
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 8, 2025',
     tags: ['IT Support', 'Cost Savings', 'Efficiency'],
-    link: '/it-support'
+    link: '/blog/managed-it-support'
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 5, 2025',
     tags: ['Cloud', 'Servers', 'Infrastructure'],
-    link: '/server-support'
+    link: '/blog/cloud-server-solutions'
   },
   {
     id: 8,
@@ -91,7 +91,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 3, 2025',
     tags: ['Mobile Apps', 'Development', 'Technology'],
-    link: '/app-development'
+    link: '/blog/mobile-app-development'
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'May 1, 2025',
     tags: ['Microsoft 365', 'Productivity', 'Cloud'],
-    link: '/microsoft-365'
+    link: '/blog/microsoft-365-productivity'
   },
   {
     id: 10,
@@ -113,7 +113,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 28, 2025',
     tags: ['Network Security', 'Data Protection', 'Firewalls'],
-    link: '/network-design'
+    link: '/blog/network-security'
   },
   {
     id: 11,
@@ -124,7 +124,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 25, 2025',
     tags: ['Hardware', 'Buying Guide', 'Business'],
-    link: '/computer-hardware'
+    link: '/blog/computer-hardware-guide'
   },
   {
     id: 12,
@@ -135,7 +135,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 22, 2025',
     tags: ['Software', 'Licensing', 'Compliance'],
-    link: '/software-licensing'
+    link: '/blog/software-licensing'
   },
   {
     id: 13,
@@ -146,7 +146,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 20, 2025',
     tags: ['Remote Work', 'Technology', 'Productivity'],
-    link: '/it-support'
+    link: '/blog/remote-work-technology'
   },
   {
     id: 14,
@@ -157,7 +157,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 18, 2025',
     tags: ['Backup', 'Recovery', 'Business Continuity'],
-    link: '/cybersecurity'
+    link: '/blog/data-backup-recovery'
   },
   {
     id: 15,
@@ -168,7 +168,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 15, 2025',
     tags: ['PWA', 'Mobile', 'Web Apps'],
-    link: '/web-development'
+    link: '/blog/progressive-web-apps'
   },
   {
     id: 16,
@@ -179,7 +179,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 12, 2025',
     tags: ['E-commerce', 'Optimization', 'South Africa'],
-    link: '/web-development'
+    link: '/blog/ecommerce-optimization'
   },
   {
     id: 17,
@@ -190,7 +190,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 10, 2025',
     tags: ['AI', 'Business', 'Innovation'],
-    link: '/it-support'
+    link: '/blog/ai-in-business'
   },
   {
     id: 18,
@@ -201,7 +201,7 @@ const blogPosts = [
     author: 'HozIT Team',
     date: 'April 8, 2025',
     tags: ['Performance', 'Speed', 'User Experience'],
-    link: '/web-development'
+    link: '/blog/website-speed-optimization'
   }
 ];
 
