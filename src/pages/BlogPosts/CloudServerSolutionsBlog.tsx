@@ -32,7 +32,7 @@ const CloudServerSolutionsBlog = () => {
               </Link>
               
               <img 
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+                src="/lovable-uploads/7ab60ab2-6466-49c3-899d-d41fd82051f4.png"
                 alt="Cloud Server Solutions"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6 shadow-lg"
               />

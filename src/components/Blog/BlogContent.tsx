@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Tag } from 'lucide-react';
@@ -76,7 +75,7 @@ const blogPosts = [
     id: 7,
     title: 'The Benefits of Cloud-Based Server Solutions',
     excerpt: 'Explore the advantages of migrating your server infrastructure to the cloud for better scalability and reliability.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31',
+    image: '/lovable-uploads/7ab60ab2-6466-49c3-899d-d41fd82051f4.png',
     category: 'Server Support',
     author: 'HozIT Team',
     date: 'May 5, 2025',
