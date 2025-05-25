@@ -1,8 +1,7 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Calendar, User, Tag, ArrowLeft } from 'lucide-react';
+import BlogPostHero from '@/components/Blog/BlogPostHero';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -20,38 +19,17 @@ const WebsiteHostingBlog = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
+        <BlogPostHero
+          title="Why Your Business Needs Professional Website Hosting"
+          date="May 20, 2025"
+          author="HozIT Team"
+          category="Website Hosting"
+          imageUrl="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+          imageAlt="Website Hosting"
+        />
+        
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <Link to="/blog" className="inline-flex items-center text-orange-500 hover:text-orange-600 mb-8">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Blog
-            </Link>
-            
-            <img 
-              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" 
-              alt="Website Hosting"
-              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-            />
-            
-            <div className="flex items-center text-sm text-gray-500 mb-4">
-              <div className="flex items-center mr-6">
-                <Calendar className="h-4 w-4 mr-2" />
-                <span>May 20, 2025</span>
-              </div>
-              <div className="flex items-center mr-6">
-                <User className="h-4 w-4 mr-2" />
-                <span>HozIT Team</span>
-              </div>
-              <div className="flex items-center">
-                <Tag className="h-4 w-4 mr-2" />
-                <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs">Website Hosting</span>
-              </div>
-            </div>
-            
-            <h1 className="text-4xl font-bold mb-6 text-gray-900">
-              Why Your Business Needs Professional Website Hosting
-            </h1>
-            
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-8">
                 In today's digital landscape, your website is often the first point of contact between your business and potential customers. The hosting solution you choose can make or break your online presence.
