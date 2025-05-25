@@ -30,9 +30,82 @@ const Index = () => {
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
 
-  // Update document title
+  // Enhanced SEO optimization
   useEffect(() => {
-    document.title = 'HozIT - Professional IT Solutions';
+    // Update document title
+    document.title = 'HozIT - Professional IT Solutions & Services | Web Hosting, Cybersecurity, IT Support';
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'HozIT provides comprehensive IT solutions including web hosting, domain registration, cybersecurity, IT support, and web development services for businesses across South Africa. Get reliable IT solutions today.');
+    }
+
+    // Add keywords meta tag
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.setAttribute('name', 'keywords');
+      document.head.appendChild(keywordsMeta);
+    }
+    keywordsMeta.setAttribute('content', 'IT solutions, web hosting, domain registration, cybersecurity, IT support, web development, South Africa, server support, Microsoft 365, network design');
+
+    // Add canonical URL
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', 'https://hozit.co.za/');
+
+    // Update Open Graph tags
+    const updateOrCreateMetaProperty = (property: string, content: string) => {
+      let meta = document.querySelector(`meta[property="${property}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    };
+
+    updateOrCreateMetaProperty('og:title', 'HozIT - Professional IT Solutions & Services');
+    updateOrCreateMetaProperty('og:description', 'Comprehensive IT solutions including web hosting, cybersecurity, IT support, and web development services for businesses across South Africa.');
+    updateOrCreateMetaProperty('og:url', 'https://hozit.co.za/');
+    updateOrCreateMetaProperty('og:type', 'website');
+    updateOrCreateMetaProperty('og:locale', 'en_ZA');
+
+    // Add structured data for organization
+    let structuredData = document.querySelector('script[type="application/ld+json"]');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.setAttribute('type', 'application/ld+json');
+      document.head.appendChild(structuredData);
+    }
+    
+    const organizationData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HozIT",
+      "description": "Professional IT solutions and services provider",
+      "url": "https://hozit.co.za",
+      "logo": "https://hozit.co.za/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "ZA"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ZA"
+      },
+      "sameAs": [
+        "https://www.hozit.co.za"
+      ]
+    };
+    
+    structuredData.textContent = JSON.stringify(organizationData);
   }, []);
 
   return (
