@@ -53,7 +53,7 @@ const blogPosts = [
     id: 5,
     title: 'Cybersecurity Best Practices for Small Businesses',
     excerpt: 'Protect your business from cyber threats with these essential security measures that every small business should implement.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
+    image: '/lovable-uploads/eeb2046c-2163-405d-961b-abb577cfd030.png',
     category: 'Cybersecurity',
     author: 'HozIT Team',
     date: 'May 10, 2025',
