@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -32,7 +33,7 @@ const WebsiteHostingBlog = () => {
               </Link>
               
               <img 
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+                src="/lovable-uploads/f533d7ac-fbc5-41db-94f2-b15197845199.png"
                 alt="Website Hosting"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6 shadow-lg"
               />

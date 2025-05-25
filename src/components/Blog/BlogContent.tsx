@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Tag } from 'lucide-react';
@@ -9,7 +10,7 @@ const blogPosts = [
     id: 1,
     title: 'Why Your Business Needs Professional Website Hosting',
     excerpt: 'Discover the advantages of reliable website hosting for your business and why it matters for your online presence.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31',
+    image: '/lovable-uploads/f533d7ac-fbc5-41db-94f2-b15197845199.png',
     category: 'Website Hosting',
     author: 'HozIT Team',
     date: 'May 20, 2025',
