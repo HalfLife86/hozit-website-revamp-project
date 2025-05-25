@@ -130,7 +130,7 @@ const blogPosts = [
     id: 12,
     title: 'Software Licensing: Compliance and Cost Management',
     excerpt: 'Navigate the complex world of software licensing while ensuring compliance and optimizing costs for your business.',
-    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
     category: 'Software Licensing',
     author: 'HozIT Team',
     date: 'April 22, 2025',
