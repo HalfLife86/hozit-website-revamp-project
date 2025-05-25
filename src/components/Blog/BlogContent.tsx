@@ -94,6 +94,116 @@ const blogPosts = [
     tags: ['Mobile Apps', 'Development', 'Technology'],
     link: '/app-development'
   },
+  {
+    id: 9,
+    title: 'Microsoft 365: Transforming Business Productivity',
+    excerpt: 'Learn how Microsoft 365 can revolutionize your business operations with integrated cloud-based productivity tools.',
+    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7',
+    category: 'Microsoft 365',
+    author: 'HozIT Team',
+    date: 'May 1, 2025',
+    tags: ['Microsoft 365', 'Productivity', 'Cloud'],
+    link: '/microsoft-365'
+  },
+  {
+    id: 10,
+    title: 'Network Security: Building a Fortress for Your Data',
+    excerpt: 'Essential network security strategies to protect your business from cyber attacks and data breaches in 2025.',
+    image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22',
+    category: 'Network Design',
+    author: 'HozIT Team',
+    date: 'April 28, 2025',
+    tags: ['Network Security', 'Data Protection', 'Firewalls'],
+    link: '/network-design'
+  },
+  {
+    id: 11,
+    title: 'Computer Hardware Buying Guide for South African Businesses',
+    excerpt: 'Make informed decisions when purchasing computer hardware with our comprehensive guide tailored for SA businesses.',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+    category: 'Computer Hardware',
+    author: 'HozIT Team',
+    date: 'April 25, 2025',
+    tags: ['Hardware', 'Buying Guide', 'Business'],
+    link: '/computer-hardware'
+  },
+  {
+    id: 12,
+    title: 'Software Licensing: Compliance and Cost Management',
+    excerpt: 'Navigate the complex world of software licensing while ensuring compliance and optimizing costs for your business.',
+    image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b',
+    category: 'Software Licensing',
+    author: 'HozIT Team',
+    date: 'April 22, 2025',
+    tags: ['Software', 'Licensing', 'Compliance'],
+    link: '/software-licensing'
+  },
+  {
+    id: 13,
+    title: 'Remote Work Technology: Setting Up Your Team for Success',
+    excerpt: 'Essential technologies and strategies to enable effective remote work for your team while maintaining security.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
+    category: 'IT Support',
+    author: 'HozIT Team',
+    date: 'April 20, 2025',
+    tags: ['Remote Work', 'Technology', 'Productivity'],
+    link: '/it-support'
+  },
+  {
+    id: 14,
+    title: 'Data Backup and Recovery: Your Business Insurance Policy',
+    excerpt: 'Why every business needs a robust backup and disaster recovery plan, and how to implement one effectively.',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
+    category: 'Cybersecurity',
+    author: 'HozIT Team',
+    date: 'April 18, 2025',
+    tags: ['Backup', 'Recovery', 'Business Continuity'],
+    link: '/cybersecurity'
+  },
+  {
+    id: 15,
+    title: 'Progressive Web Apps: The Future of Mobile Development',
+    excerpt: 'Discover how Progressive Web Apps are bridging the gap between web and mobile applications for businesses.',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
+    category: 'Web Development',
+    author: 'HozIT Team',
+    date: 'April 15, 2025',
+    tags: ['PWA', 'Mobile', 'Web Apps'],
+    link: '/web-development'
+  },
+  {
+    id: 16,
+    title: 'E-commerce Website Optimization for South African Markets',
+    excerpt: 'Maximize your online sales with proven e-commerce optimization strategies tailored for the South African market.',
+    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
+    category: 'Web Development',
+    author: 'HozIT Team',
+    date: 'April 12, 2025',
+    tags: ['E-commerce', 'Optimization', 'South Africa'],
+    link: '/web-development'
+  },
+  {
+    id: 17,
+    title: 'The Rise of AI in Business: Practical Applications',
+    excerpt: 'Explore how artificial intelligence is transforming businesses and identify opportunities for your organization.',
+    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    category: 'Technology Trends',
+    author: 'HozIT Team',
+    date: 'April 10, 2025',
+    tags: ['AI', 'Business', 'Innovation'],
+    link: '/it-support'
+  },
+  {
+    id: 18,
+    title: 'Website Speed Optimization: Every Second Counts',
+    excerpt: 'Learn why website speed matters for your business and implement these proven techniques to boost performance.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+    category: 'Web Development',
+    author: 'HozIT Team',
+    date: 'April 8, 2025',
+    tags: ['Performance', 'Speed', 'User Experience'],
+    link: '/web-development'
+  }
 ];
 
 const BlogContent = () => {
