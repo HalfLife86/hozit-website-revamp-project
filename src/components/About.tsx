@@ -12,7 +12,7 @@ const About = () => {
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3" 
-                alt="IT Professional Team" 
+                alt="Professional IT team working on computers providing technical support and cybersecurity services in South Africa" 
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
@@ -26,41 +26,41 @@ const About = () => {
           
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 font-heading">
-              Who We Are
+              Leading IT Solutions Provider in South Africa
             </h2>
             <p className="text-gray-600 mb-6 text-lg">
-              HozIT is a leading IT solutions provider dedicated to helping businesses navigate the complex digital landscape. With over 10 years of experience, we've helped hundreds of companies optimize their IT infrastructure, enhance security, and achieve operational excellence.
+              HozIT is a premier IT solutions provider dedicated to helping South African businesses thrive in the digital landscape. With over 10 years of experience, we've successfully transformed hundreds of companies through innovative IT infrastructure, robust cybersecurity, and reliable technical support services.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
-                <span className="text-gray-700">Certified Professionals</span>
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
+                <span className="text-gray-700">Microsoft Certified Professionals</span>
               </div>
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
-                <span className="text-gray-700">24/7 Support</span>
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
+                <span className="text-gray-700">24/7 Technical Support</span>
               </div>
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
-                <span className="text-gray-700">Custom Solutions</span>
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
+                <span className="text-gray-700">Custom Business Solutions</span>
               </div>
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
                 <span className="text-gray-700">Competitive Pricing</span>
               </div>
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
                 <span className="text-gray-700">Proven Track Record</span>
               </div>
               <div className="flex items-start">
-                <Check className="mr-2 h-5 w-5 text-green-500" />
+                <Check className="mr-2 h-5 w-5 text-green-500" aria-hidden="true" />
                 <span className="text-gray-700">Industry Expertise</span>
               </div>
             </div>
             
-            <Button className="btn-primary">
-              Learn More About Us
+            <Button className="btn-primary" aria-label="Learn more about HozIT's IT services">
+              Discover Our IT Solutions
             </Button>
           </div>
         </div>

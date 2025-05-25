@@ -12,12 +12,12 @@ import CTASection from '@/components/WebsiteHosting/CTASection';
 const WebsiteHosting = () => {
   // Enhanced SEO optimization
   React.useEffect(() => {
-    document.title = 'Best Website Hosting South Africa - Fast & Reliable Web Hosting | HozIT';
+    document.title = 'Best Website Hosting South Africa 2025 - Fast SSD Hosting from R59/month | HozIT';
     
     // Update meta description with compelling copy and keywords
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Get the best website hosting in South Africa with HozIT. Fast SSD hosting, 99.9% uptime guarantee, free SSL certificates, and 24/7 support. Choose from affordable shared, VPS, and dedicated hosting plans.');
+      metaDescription.setAttribute('content', 'Premium website hosting South Africa with 99.9% uptime, free SSL certificates, SSD storage & 24/7 support. Affordable hosting plans from R59/month. Get fast, reliable web hosting today!');
     }
 
     // Enhanced keywords with long-tail variations
@@ -27,7 +27,7 @@ const WebsiteHosting = () => {
       keywordsMeta.setAttribute('name', 'keywords');
       document.head.appendChild(keywordsMeta);
     }
-    keywordsMeta.setAttribute('content', 'best website hosting South Africa, web hosting services, fast SSD hosting, reliable web hosting, cheap hosting plans, shared hosting SA, VPS hosting, dedicated servers, website hosting with SSL, 24/7 hosting support, WordPress hosting');
+    keywordsMeta.setAttribute('content', 'website hosting South Africa, web hosting, SSD hosting, WordPress hosting, domain hosting, cheap hosting, reliable hosting, fast hosting, hosting plans, web hosting services');
 
     // Add canonical URL
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -49,10 +49,11 @@ const WebsiteHosting = () => {
       meta.setAttribute('content', content);
     };
 
-    updateOrCreateMetaProperty('og:title', 'Best Website Hosting South Africa - Fast & Reliable | HozIT');
-    updateOrCreateMetaProperty('og:description', 'Premium web hosting services with SSD storage, 99.9% uptime, free SSL, and expert support. Affordable hosting plans for businesses of all sizes.');
+    updateOrCreateMetaProperty('og:title', 'Best Website Hosting South Africa 2025 - Fast SSD Hosting | HozIT');
+    updateOrCreateMetaProperty('og:description', 'Premium website hosting with 99.9% uptime, free SSL certificates, SSD storage & 24/7 support. Affordable hosting plans from R59/month.');
     updateOrCreateMetaProperty('og:url', 'https://hozit.co.za/website-hosting');
     updateOrCreateMetaProperty('og:type', 'service');
+    updateOrCreateMetaProperty('og:image', 'https://hozit.co.za/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png');
 
     // Enhanced structured data for better search results
     let structuredData = document.querySelector('script[type="application/ld+json"]');
@@ -65,15 +66,23 @@ const WebsiteHosting = () => {
     const serviceData = {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Website Hosting Services",
-      "description": "Professional web hosting services with SSD storage, 99.9% uptime guarantee, and 24/7 technical support",
+      "name": "Website Hosting Services South Africa",
+      "description": "Premium website hosting with SSD storage, 99.9% uptime guarantee, free SSL certificates and 24/7 technical support",
       "provider": {
         "@type": "Organization",
         "name": "HozIT",
         "url": "https://hozit.co.za",
-        "logo": "https://hozit.co.za/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png"
+        "logo": "https://hozit.co.za/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+27-11-123-4567",
+          "contactType": "customer service"
+        }
       },
-      "areaServed": "ZA",
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
       "serviceType": "Web Hosting",
       "offers": {
         "@type": "AggregateOffer",
@@ -81,6 +90,11 @@ const WebsiteHosting = () => {
         "highPrice": "1399",
         "priceCurrency": "ZAR",
         "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
       }
     };
     

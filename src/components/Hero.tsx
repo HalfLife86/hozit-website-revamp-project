@@ -10,21 +10,21 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white">
-              Professional IT Solutions for <span className="text-black">Business Growth</span>
+              Professional IT Solutions for <span className="text-black">South African Business Growth</span>
             </h1>
             <p className="text-lg md:text-xl text-white mb-8 max-w-lg">
-              Comprehensive IT services including web hosting, cybersecurity, and technical support tailored to help your business thrive in the digital world.
+              Comprehensive IT services including website hosting, cybersecurity, technical support, and custom software solutions tailored to help your business thrive in South Africa's competitive digital landscape.
             </p>
             <div>
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold" aria-label="Get started with IT solutions">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold" aria-label="Get started with professional IT solutions">
+                Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
           
           <div className="hidden md:block">
             <div className="bg-white p-8 rounded-lg shadow-xl transform rotate-2 animate-fade-in border border-gray-200">
-              <h3 className="text-xl font-bold text-black mb-4">Ready to transform your business?</h3>
+              <h3 className="text-xl font-bold text-black mb-4">Transform Your Business With Expert IT Solutions</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mr-3 mt-1" aria-hidden="true">
@@ -32,7 +32,7 @@ const Hero = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                     </svg>
                   </div>
-                  <span className="text-gray-700">24/7 IT Support</span>
+                  <span className="text-gray-700">24/7 IT Support & Helpdesk</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mr-3 mt-1" aria-hidden="true">
@@ -40,7 +40,7 @@ const Hero = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                     </svg>
                   </div>
-                  <span className="text-gray-700">Custom Software Solutions</span>
+                  <span className="text-gray-700">Custom Software Development</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mr-3 mt-1" aria-hidden="true">
@@ -48,7 +48,7 @@ const Hero = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                     </svg>
                   </div>
-                  <span className="text-gray-700">Network Infrastructure</span>
+                  <span className="text-gray-700">Network Infrastructure Setup</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mr-3 mt-1" aria-hidden="true">
@@ -56,12 +56,12 @@ const Hero = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                     </svg>
                   </div>
-                  <span className="text-gray-700">Cloud Services</span>
+                  <span className="text-gray-700">Cloud Migration Services</span>
                 </li>
               </ul>
               <a href="#contact">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full mt-6" aria-label="Request IT consultation">
-                  Request Consultation
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full mt-6" aria-label="Request free IT consultation">
+                  Request Free Consultation
                 </Button>
               </a>
             </div>
