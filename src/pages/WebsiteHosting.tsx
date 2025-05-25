@@ -12,22 +12,22 @@ import CTASection from '@/components/WebsiteHosting/CTASection';
 const WebsiteHosting = () => {
   // Enhanced SEO optimization
   React.useEffect(() => {
-    document.title = 'Web Hosting South Africa - Reliable Website Hosting Services | HozIT';
+    document.title = 'Best Website Hosting South Africa - Fast & Reliable Web Hosting | HozIT';
     
-    // Update meta description
+    // Update meta description with compelling copy and keywords
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional web hosting services in South Africa. Fast, secure, and reliable website hosting with 99.9% uptime guarantee. Choose from shared, VPS, and dedicated hosting plans.');
+      metaDescription.setAttribute('content', 'Get the best website hosting in South Africa with HozIT. Fast SSD hosting, 99.9% uptime guarantee, free SSL certificates, and 24/7 support. Choose from affordable shared, VPS, and dedicated hosting plans.');
     }
 
-    // Add keywords
+    // Enhanced keywords with long-tail variations
     let keywordsMeta = document.querySelector('meta[name="keywords"]');
     if (!keywordsMeta) {
       keywordsMeta = document.createElement('meta');
       keywordsMeta.setAttribute('name', 'keywords');
       document.head.appendChild(keywordsMeta);
     }
-    keywordsMeta.setAttribute('content', 'web hosting, website hosting, South Africa hosting, shared hosting, VPS hosting, dedicated servers, reliable hosting, fast hosting');
+    keywordsMeta.setAttribute('content', 'best website hosting South Africa, web hosting services, fast SSD hosting, reliable web hosting, cheap hosting plans, shared hosting SA, VPS hosting, dedicated servers, website hosting with SSL, 24/7 hosting support, WordPress hosting');
 
     // Add canonical URL
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -38,7 +38,7 @@ const WebsiteHosting = () => {
     }
     canonicalLink.setAttribute('href', 'https://hozit.co.za/website-hosting');
 
-    // Update Open Graph tags
+    // Update Open Graph tags with more compelling titles
     const updateOrCreateMetaProperty = (property: string, content: string) => {
       let meta = document.querySelector(`meta[property="${property}"]`);
       if (!meta) {
@@ -49,12 +49,12 @@ const WebsiteHosting = () => {
       meta.setAttribute('content', content);
     };
 
-    updateOrCreateMetaProperty('og:title', 'Professional Web Hosting Services South Africa | HozIT');
-    updateOrCreateMetaProperty('og:description', 'Fast, secure, and reliable web hosting services with 99.9% uptime guarantee. Multiple hosting plans to suit your business needs.');
+    updateOrCreateMetaProperty('og:title', 'Best Website Hosting South Africa - Fast & Reliable | HozIT');
+    updateOrCreateMetaProperty('og:description', 'Premium web hosting services with SSD storage, 99.9% uptime, free SSL, and expert support. Affordable hosting plans for businesses of all sizes.');
     updateOrCreateMetaProperty('og:url', 'https://hozit.co.za/website-hosting');
     updateOrCreateMetaProperty('og:type', 'service');
 
-    // Add structured data for service
+    // Enhanced structured data for better search results
     let structuredData = document.querySelector('script[type="application/ld+json"]');
     if (!structuredData) {
       structuredData = document.createElement('script');
@@ -66,14 +66,22 @@ const WebsiteHosting = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Website Hosting Services",
-      "description": "Professional web hosting services with reliable performance and 99.9% uptime guarantee",
+      "description": "Professional web hosting services with SSD storage, 99.9% uptime guarantee, and 24/7 technical support",
       "provider": {
         "@type": "Organization",
         "name": "HozIT",
-        "url": "https://hozit.co.za"
+        "url": "https://hozit.co.za",
+        "logo": "https://hozit.co.za/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png"
       },
       "areaServed": "ZA",
-      "serviceType": "Web Hosting"
+      "serviceType": "Web Hosting",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "59",
+        "highPrice": "1399",
+        "priceCurrency": "ZAR",
+        "availability": "https://schema.org/InStock"
+      }
     };
     
     structuredData.textContent = JSON.stringify(serviceData);
