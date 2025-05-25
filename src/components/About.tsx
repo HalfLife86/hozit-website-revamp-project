@@ -1,9 +1,15 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 
 const About = () => {
+  const handleDiscoverSolutions = () => {
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +65,11 @@ const About = () => {
               </div>
             </div>
             
-            <Button className="btn-primary" aria-label="Learn more about HozIT's IT services">
+            <Button 
+              className="btn-primary" 
+              onClick={handleDiscoverSolutions}
+              aria-label="Learn more about HozIT's IT services"
+            >
               Discover Our IT Solutions
             </Button>
           </div>
