@@ -21,7 +21,7 @@ const blogPosts = [
     id: 2,
     title: 'Choosing the Right Domain Name for Your Business',
     excerpt: 'Learn how to select the perfect domain name that aligns with your brand and helps customers find you online.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+    image: '/lovable-uploads/f95ab797-93f5-4d89-930b-cc53d3990a38.png',
     category: 'Domain Registration',
     author: 'HozIT Team',
     date: 'May 18, 2025',
