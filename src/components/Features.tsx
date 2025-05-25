@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle, Server, ArrowRight, Shield, Users, Database, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -61,8 +60,8 @@ const Features = () => {
   ];
 
   const guarantees = [
-    'Reliability',
-    'Real People',
+    '30 Days Money Back Guarantee on Web Hosting',
+    '24/7 Support',
     'Daily Backups',
     'Safe & Secure'
   ];
@@ -115,7 +114,7 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 font-heading">
-            Experience The Hozit Features Difference Today!
+            Experience The HOZIT Features Difference Today!
           </h2>
         </div>
         
@@ -133,7 +132,7 @@ const Features = () => {
         <div className="bg-it-accent text-black rounded-lg p-8 md:p-12 mb-16">
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">Hozit Guarantees</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">HOZIT Guarantees</h3>
               <p className="mb-6 text-black">
                 We are proud to guarantee a quality hosting experience or your money back. 
                 A guarantee based on reality… who would have thought?!
@@ -150,7 +149,7 @@ const Features = () => {
               </Button>
             </div>
             <div className="hidden md:block">
-              <Shield className="h-32 w-32 mx-auto text-black opacity-20" />
+              <Shield className="h-32 w-32 mx-auto text-black opacity-60" />
             </div>
           </div>
         </div>
