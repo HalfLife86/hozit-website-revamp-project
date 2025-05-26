@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -16,8 +15,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            {/* Optimized heading for LCP */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white">
+            {/* Optimized heading for LCP - add explicit font loading */}
+            <h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white"
+              style={{ fontDisplay: 'swap' }}
+            >
               Professional IT Solutions for{' '}
               <span className="text-black">South African Business Growth</span>
             </h1>
@@ -47,10 +49,13 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Optimized image section */}
+          {/* Optimized image section with explicit dimensions */}
           <div className="hidden lg:block">
             <div className="relative">
-              <div className="bg-white p-8 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-1 transition-transform duration-300">
+              <div 
+                className="bg-white p-8 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-1 transition-transform duration-300"
+                style={{ minHeight: '300px', width: '350px' }}
+              >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -80,10 +85,12 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Performance optimized wave SVG */}
+      {/* Performance optimized wave SVG with explicit dimensions */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg 
           className="w-full h-16" 
+          width="1200"
+          height="120"
           viewBox="0 0 1200 120" 
           preserveAspectRatio="none"
           role="presentation"

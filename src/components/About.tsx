@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
@@ -18,8 +19,12 @@ const About = () => {
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3" 
-                alt="Professional IT team working on computers providing technical support and cybersecurity services in South Africa" 
+                alt="Professional IT team working on computers providing technical support and cybersecurity services in South Africa"
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover rounded-lg"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 hidden md:block">
