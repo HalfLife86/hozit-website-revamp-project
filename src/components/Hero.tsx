@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -15,11 +16,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            {/* Optimized heading for LCP - add explicit font loading */}
-            <h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white"
-              style={{ fontDisplay: 'swap' }}
-            >
+            {/* Optimized heading for LCP */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white">
               Professional IT Solutions for{' '}
               <span className="text-black">South African Business Growth</span>
             </h1>
