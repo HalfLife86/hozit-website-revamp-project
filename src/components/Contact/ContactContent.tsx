@@ -49,7 +49,6 @@ const ContactContent = () => {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'info@hozit.co.za',
       };
 
       console.log("Sending email with data:", templateParams);
