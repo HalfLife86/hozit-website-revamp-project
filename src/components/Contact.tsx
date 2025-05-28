@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Facebook, X, Instagram, Linkedin } from 'lucide-react';
@@ -39,10 +38,10 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - you'll need to set these up in EmailJS dashboard
-      const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-      const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+      // EmailJS configuration
+      const serviceId = 'service_n4400m9';
+      const templateId = 'template_u2oh7d4';
+      const publicKey = 's9YQR8_wMjfdDG9Pk';
       
       // Template parameters that will be sent to EmailJS
       const templateParams = {
@@ -50,33 +49,18 @@ const Contact = () => {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'info@hozit.co.za', // Your receiving email
+        to_email: 'info@hozit.co.za',
       };
 
       console.log("Sending email with data:", templateParams);
       
-      // For now, we'll use a fallback method since EmailJS requires setup
-      // You can replace this with the actual EmailJS call once configured
-      if (serviceId === 'YOUR_SERVICE_ID') {
-        // Fallback: Log the form data and show success message
-        console.log("Form submitted with data:", formData);
-        console.log("Email would be sent to: info@hozit.co.za");
-        console.log("Please configure EmailJS with your service ID, template ID, and public key");
-        
-        // Show success message
-        toast({
-          title: "Message Received!",
-          description: "Thank you for your message. We'll get back to you within 24 hours.",
-        });
-      } else {
-        // Actual EmailJS call (uncomment when you have valid credentials)
-        // await emailjs.send(serviceId, templateId, templateParams, publicKey);
-        
-        toast({
-          title: "Message Sent Successfully!",
-          description: "Thank you for contacting us. We'll respond to your inquiry within 24 hours.",
-        });
-      }
+      // Send email via EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for contacting us. We'll respond to your inquiry within 24 hours.",
+      });
       
       // Reset form
       setFormData({
