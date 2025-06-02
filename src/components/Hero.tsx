@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Star, Users, Trophy, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -14,6 +14,32 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-20">
+        {/* Trust indicators */}
+        <div className="text-center mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-white mb-4">
+            <div className="flex items-center space-x-2">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm font-semibold">Excellent on Google Reviews</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Users className="w-4 h-4" />
+              <span className="text-sm font-semibold">1,245+ Clients & Counting</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Trophy className="w-4 h-4" />
+              <span className="text-sm font-semibold">400+ Projects Delivered</span>
+            </div>
+          </div>
+          <div className="flex justify-center items-center space-x-2 text-white">
+            <Heart className="w-4 h-4 fill-pink-400 text-pink-400" />
+            <span className="text-sm font-semibold">70% Young Black Female Owned Business</span>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             {/* Optimized heading for LCP */}
@@ -52,7 +78,7 @@ const Hero = () => {
             <div className="relative">
               <div 
                 className="bg-white p-8 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-1 transition-transform duration-300"
-                style={{ minHeight: '300px', width: '350px' }}
+                style={{ minHeight: '350px', width: '350px' }}
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
@@ -73,9 +99,22 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <p className="text-sm text-gray-600">
-                    <strong className="text-orange-600">500+</strong> businesses trust HozIT
-                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600 font-medium">Happy Clients:</span>
+                      <span className="text-lg font-bold text-orange-600">1,245+</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600 font-medium">Projects Done:</span>
+                      <span className="text-lg font-bold text-orange-600">400+</span>
+                    </div>
+                    <div className="flex items-center space-x-1 justify-center mt-3">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                      <span className="text-sm text-gray-600 ml-2">Excellent Reviews</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
