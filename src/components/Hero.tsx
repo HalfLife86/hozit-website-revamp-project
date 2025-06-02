@@ -15,28 +15,28 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-20">
         {/* Trust indicators */}
-        <div className="text-center mb-8">
-          <div className="flex flex-wrap justify-center items-center gap-6 text-white mb-4">
-            <div className="flex items-center space-x-2">
+        <div className="text-center mb-12">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-white mb-6">
+            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-sm font-semibold">Excellent on Google Reviews</span>
+              <span className="text-base font-bold text-white">Excellent on Google Reviews</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Users className="w-4 h-4" />
-              <span className="text-sm font-semibold">1,245+ Clients & Counting</span>
+            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
+              <Users className="w-5 h-5 text-white" />
+              <span className="text-base font-bold text-white">1,245+ Clients & Counting</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Trophy className="w-4 h-4" />
-              <span className="text-sm font-semibold">400+ Projects Delivered</span>
+            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
+              <Trophy className="w-5 h-5 text-yellow-400" />
+              <span className="text-base font-bold text-white">400+ Projects Delivered</span>
             </div>
           </div>
-          <div className="flex justify-center items-center space-x-2 text-white">
-            <Heart className="w-4 h-4 fill-pink-400 text-pink-400" />
-            <span className="text-sm font-semibold">70% Young Black Female Owned Business</span>
+          <div className="flex justify-center items-center space-x-3 bg-black/30 backdrop-blur-sm px-6 py-4 rounded-full border border-white/40 inline-flex">
+            <Heart className="w-6 h-6 fill-pink-400 text-pink-400" />
+            <span className="text-lg font-bold text-white">70% Young Black Female Owned Business</span>
           </div>
         </div>
 
