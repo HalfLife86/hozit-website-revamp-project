@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, X, Instagram, Linkedin } from 'lucide-react';
@@ -17,9 +16,9 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/5e72b0ed-4de3-4e17-90b1-afbbc6ebb050.png" 
+                src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
                 alt="HozIT Logo" 
-                className="h-1"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-black mb-4">
