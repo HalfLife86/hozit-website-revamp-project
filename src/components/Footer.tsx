@@ -14,16 +14,22 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="mb-4">
+            <div className="mb-4 flex items-center justify-between">
               <img 
                 src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
                 alt="HozIT Logo" 
                 className="footer-logo h-10 md:h-12 w-auto"
               />
+              <img 
+                src="/lovable-uploads/61863a51-8895-4a73-ad0d-f4e07312f125.png" 
+                alt="Supported Payment Methods" 
+                className="h-8 md:h-10 w-auto ml-4"
+              />
             </div>
             <p className="text-black mb-4">
               Providing professional IT solutions and services to businesses of all sizes.
             </p>
+            
             <div className="flex space-x-4">
               <a href="https://web.facebook.com/people/Hozit-Domain-Hosting/100086561992144/?mibextid=PtKPJ9" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
                 <Facebook className="w-5 h-5" />
