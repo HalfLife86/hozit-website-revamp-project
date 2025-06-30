@@ -64,6 +64,24 @@ const Reviews = () => {
       rating: 5,
       review: "The Microsoft 365 setup and support from HozIT transformed how our team collaborates. Everything works seamlessly, and their ongoing support is fantastic.",
       location: "Bloemfontein, South Africa"
+    },
+    {
+      name: "Thabo Mthembu",
+      rating: 5,
+      review: "HozIT's network design solutions revolutionized our business operations. Their expertise in setting up our infrastructure was remarkable, and the performance improvements are outstanding.",
+      location: "Rustenburg, South Africa"
+    },
+    {
+      name: "Jennifer Williams",
+      rating: 5,
+      review: "From initial consultation to final implementation, HozIT delivered beyond our expectations. Their IT support team is knowledgeable, friendly, and always ready to help.",
+      location: "Pretoria, South Africa"
+    },
+    {
+      name: "Sipho Kgomo",
+      rating: 5,
+      review: "Outstanding service! HozIT's cloud solutions have made our business more efficient and secure. Their team's dedication to customer satisfaction is truly impressive.",
+      location: "Kimberley, South Africa"
     }
   ];
 
