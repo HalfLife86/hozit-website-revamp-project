@@ -92,13 +92,6 @@ const ComputerHardwarePackages = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="text-center mt-12">
-          <p className="text-lg mb-4">Need a custom solution for your business?</p>
-          <Button variant="outline" size="lg" className="border-it-accent text-it-accent hover:bg-it-accent hover:text-white">
-            Request Custom Quote
-          </Button>
-        </div>
       </div>
     </section>
   );
