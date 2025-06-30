@@ -62,9 +62,6 @@ const ComputerHardwareHero = () => {
                   <span className="text-gray-700">Extended Warranty Options</span>
                 </li>
               </ul>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full mt-6">
-                Explore Solutions
-              </Button>
             </div>
           </div>
         </div>
