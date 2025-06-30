@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -90,11 +91,21 @@
     image-rendering: -webkit-optimize-contrast;
   }
 
-  /* Optimize logo images specifically */
-  img[alt*="logo" i], img[alt*="Logo" i] {
+  /* Optimize footer/header logo images specifically (excluding loading screen) */
+  footer img[alt*="logo" i], 
+  header img[alt*="logo" i],
+  nav img[alt*="logo" i] {
     contain-intrinsic-size: 64px 64px;
     max-width: 100%;
     height: auto;
+  }
+
+  /* Loading screen logo specific styles */
+  .loading-logo {
+    height: 80px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    contain-intrinsic-size: 80px 80px !important;
   }
 
   /* Specific override for footer logo to match header sizing */

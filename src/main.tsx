@@ -45,7 +45,7 @@ const Loading = () => (
             <img 
               src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
               alt="HozIT Logo" 
-              className="h-20 w-auto animate-pulse transform hover:scale-110 transition-transform duration-300"
+              className="loading-logo animate-pulse transform hover:scale-110 transition-transform duration-300"
             />
           </div>
           {/* Floating rings around logo */}
