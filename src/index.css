@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -98,11 +97,12 @@
     height: auto;
   }
 
-  /* Specific override for footer logo to ensure proper sizing */
-  .footer-logo {
+  /* Specific override for footer logo to ensure proper sizing - higher specificity */
+  footer .footer-logo {
     height: 32px !important;
     width: auto !important;
-    max-width: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
   }
 }
 

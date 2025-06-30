@@ -19,7 +19,7 @@ const Footer = () => {
                 src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
                 alt="HozIT Logo" 
                 className="footer-logo h-8 w-auto"
-                style={{ height: '32px', width: 'auto' }}
+                style={{ height: '32px', width: 'auto', maxWidth: '100%' }}
               />
             </div>
             <p className="text-black mb-4">
