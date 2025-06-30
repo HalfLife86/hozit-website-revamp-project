@@ -97,6 +97,13 @@
     max-width: 100%;
     height: auto;
   }
+
+  /* Specific override for footer logo to ensure proper sizing */
+  .footer-logo {
+    height: 32px !important;
+    width: auto !important;
+    max-width: 100%;
+  }
 }
 
 /* Critical above-the-fold styles */
