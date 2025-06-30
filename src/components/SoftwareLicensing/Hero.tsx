@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Key, Shield } from 'lucide-react';
 
 const SoftwareLicensingHero = () => {
   return (
@@ -18,11 +16,6 @@ const SoftwareLicensingHero = () => {
             <p className="text-white mb-8">
               At Hozit Domain Hosting, we take the complexity out of software licensing, helping your business save time, reduce costs, and ensure compliance.
             </p>
-            <div>
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
-                Explore Our Solutions <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
           </div>
           
           <div className="hidden md:block">
@@ -62,9 +55,6 @@ const SoftwareLicensingHero = () => {
                   <span className="text-gray-700">Expert Guidance</span>
                 </li>
               </ul>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full mt-6">
-                Explore Solutions
-              </Button>
             </div>
           </div>
         </div>
