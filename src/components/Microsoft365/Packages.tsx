@@ -57,8 +57,8 @@ const Microsoft365Packages = () => {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white">
-                Get Started
+              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white" asChild>
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/microsoft-365/starter-package" target="_blank" rel="noopener noreferrer">Get Started</a>
               </Button>
             </CardFooter>
           </Card>
@@ -111,8 +111,8 @@ const Microsoft365Packages = () => {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white">
-                Get Started
+              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white" asChild>
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/microsoft-365/business-growth-package" target="_blank" rel="noopener noreferrer">Get Started</a>
               </Button>
             </CardFooter>
           </Card>
@@ -158,8 +158,8 @@ const Microsoft365Packages = () => {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white">
-                Get Quote
+              <Button className="w-full bg-it-accent hover:bg-amber-600 text-white" asChild>
+                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/microsoft-365/enterprise-package" target="_blank" rel="noopener noreferrer">Get Quote</a>
               </Button>
             </CardFooter>
           </Card>
