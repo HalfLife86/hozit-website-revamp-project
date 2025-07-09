@@ -109,7 +109,9 @@ const Navbar = () => {
 
             <Link to="/blog" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Blog</Link>
             <Link to="/contact" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Contact</Link>
-            <Button className="btn-primary ml-4">Get Quote</Button>
+            <Button asChild className="btn-primary ml-4">
+              <a href="https://hozit.co.za/support" target="_blank" rel="noopener noreferrer">Support</a>
+            </Button>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -153,7 +155,9 @@ const Navbar = () => {
               
               <Link to="/blog" className="nav-link text-black font-bold block px-3 py-2">Blog</Link>
               <Link to="/contact" className="nav-link text-black font-bold block px-3 py-2">Contact</Link>
-              <Button className="btn-primary mt-2 w-full">Get Quote</Button>
+              <Button asChild className="btn-primary mt-2 w-full">
+                <a href="https://hozit.co.za/support" target="_blank" rel="noopener noreferrer">Support</a>
+              </Button>
             </div>
           </div>
         )}
