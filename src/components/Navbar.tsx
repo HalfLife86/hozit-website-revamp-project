@@ -51,9 +51,9 @@ const Navbar = () => {
               <img 
                 src={logoSrc}
                 alt="HozIT Logo" 
-                className="h-9 md:h-11"
-                width="108"
-                height="43"
+                className="h-10 md:h-12"
+                width="120"
+                height="48"
               />
             </Link>
           </div>
