@@ -2,12 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, X, Instagram, Linkedin } from 'lucide-react';
 import TermsAcceptancePopup from './TermsAcceptancePopup';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-white text-black py-12">
+  return <footer className="bg-white text-black py-12">
       {/* Terms of Use Popup */}
       <TermsAcceptancePopup />
       
@@ -15,16 +12,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="mb-4 flex items-center justify-between">
-              <img 
-                src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
-                alt="HozIT Logo" 
-                className="footer-logo h-10 md:h-12 w-auto"
-              />
-              <img 
-                src="/lovable-uploads/61863a51-8895-4a73-ad0d-f4e07312f125.png" 
-                alt="Supported Payment Methods" 
-                className="h-8 md:h-10 w-auto ml-4"
-              />
+              <img src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" alt="HozIT Logo" className="footer-logo h-10 md:h-12 w-auto" />
+              <img src="/lovable-uploads/61863a51-8895-4a73-ad0d-f4e07312f125.png" alt="Supported Payment Methods" className="h-8 md:h-10 w-auto ml-4" />
             </div>
             <p className="text-black mb-4">
               Providing professional IT solutions and services to businesses of all sizes.
@@ -52,7 +41,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-black">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-black">     Services</h3>
             <ul className="space-y-2">
               <li><Link to="/it-support" className="text-black hover:text-gray-700 transition-colors">IT Support</Link></li>
               <li><Link to="/website-hosting" className="text-black hover:text-gray-700 transition-colors">Cloud Services</Link></li>
@@ -112,8 +101,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
