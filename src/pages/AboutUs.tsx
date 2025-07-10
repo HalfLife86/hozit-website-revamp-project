@@ -231,9 +231,25 @@ const AboutUs = () => {
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Mission</h2>
-          <p className="text-xl leading-relaxed">
+          <p className="text-xl leading-relaxed mb-12">
             To provide reliable, secure, and scalable IT solutions that support our clients' digital transformation and long-term growth.
           </p>
+          
+          {/* Company Registration Details */}
+          <div className="grid md:grid-cols-3 gap-6 pt-8 border-t border-muted-foreground/20">
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">VAT Number</h3>
+              <p className="text-muted-foreground">4820276410</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">Company Registration</h3>
+              <p className="text-muted-foreground">2020/001667/07</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">CSD Number</h3>
+              <p className="text-muted-foreground">MAAA1176904</p>
+            </div>
+          </div>
         </div>
       </section>
 
