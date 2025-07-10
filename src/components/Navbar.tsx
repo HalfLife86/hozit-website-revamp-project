@@ -61,6 +61,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>Home</Link>
+            <Link to="/about" className={`nav-link font-bold ${isScrolled ? 'text-black' : 'text-white'}`}>About</Link>
             
             {/* Services Dropdown Menu */}
             <DropdownMenu>
@@ -135,6 +136,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white rounded-lg mt-2 shadow-lg animate-fade-in">
               <Link to="/" className="nav-link text-black font-bold block px-3 py-2">Home</Link>
+              <Link to="/about" className="nav-link text-black font-bold block px-3 py-2">About</Link>
               
               {/* Mobile Services Section with collapsible items */}
               <div className="space-y-1 pl-3">
