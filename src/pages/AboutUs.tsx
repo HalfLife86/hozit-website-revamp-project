@@ -145,10 +145,10 @@ const AboutUs = () => {
       </section>
 
       {/* Empowering Local Talent Section */}
-      <section className="py-16 bg-gradient-to-r from-it-accent to-primary text-white">
+      <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Empowering Local Talent</h2>
-          <div className="prose prose-lg max-w-none text-white">
+          <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
               Hozit is proudly Black-owned and strongly rooted in empowerment and diversity. The leadership team includes two dynamic black female directors: Ms. Tinyiko Ngwenyama and Ms. Travolta Tecia Mkhabela. We are passionate about nurturing young black professionals, offering them opportunities to lead and innovate in the rapidly evolving tech space.
             </p>
@@ -236,7 +236,7 @@ const AboutUs = () => {
           </p>
           
           {/* Company Registration Details */}
-          <div className="grid md:grid-cols-3 gap-6 pt-8 border-t border-muted-foreground/20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 border-t border-muted-foreground/20">
             <div className="text-center">
               <h3 className="font-semibold text-lg mb-2">VAT Number</h3>
               <p className="text-muted-foreground">4820276410</p>
@@ -248,6 +248,18 @@ const AboutUs = () => {
             <div className="text-center">
               <h3 className="font-semibold text-lg mb-2">CSD Number</h3>
               <p className="text-muted-foreground">MAAA1176904</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">B-BBEE Level</h3>
+              <p className="text-muted-foreground">Level 1</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">Black Ownership</h3>
+              <p className="text-muted-foreground">100% Black Owned</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-2">Female Youth</h3>
+              <p className="text-muted-foreground">70% Black Female Youth</p>
             </div>
           </div>
         </div>
