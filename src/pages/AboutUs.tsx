@@ -1,16 +1,89 @@
+import React, { useEffect } from 'react';
 import { Users, Award, Shield, Clock, Globe, Headphones } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const AboutUs = () => {
+  useEffect(() => {
+    document.title = 'About HozIT - Premier South African IT Solutions Provider | HozIT';
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about HozIT Domain Hosting - South Africa\'s premier IT solutions provider since 2020. Trusted by Glencore, Norton Rose, SEFA and more.');
+    }
+
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.setAttribute('name', 'keywords');
+      document.head.appendChild(keywordsMeta);
+    }
+    keywordsMeta.setAttribute('content', 'HozIT about us, South African IT company, black-owned business, IT solutions South Africa, Winter Zozi');
+
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', 'https://hozit.co.za/about');
+
+    const updateOrCreateMetaProperty = (property: string, content: string) => {
+      let meta = document.querySelector(`meta[property="${property}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    };
+
+    updateOrCreateMetaProperty('og:title', 'About HozIT - Premier South African IT Solutions Provider');
+    updateOrCreateMetaProperty('og:description', 'Learn about HozIT Domain Hosting - South Africa\'s premier IT solutions provider since 2020.');
+    updateOrCreateMetaProperty('og:url', 'https://hozit.co.za/about');
+    updateOrCreateMetaProperty('og:type', 'website');
+  }, []);
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-it-accent text-white py-20">
+      <section className="bg-gradient-to-br from-primary to-it-accent text-white py-20 pt-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Empowering South African businesses with innovative IT solutions since 2020
           </p>
+        </div>
+      </section>
+
+      {/* Team Image Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+                  Meet Our Team
+                </h2>
+                <p className="text-lg leading-relaxed mb-6">
+                  Our people put you and your team first. We're passionate about delivering exceptional customer service with best-fit technology solutions that drive your business forward.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  We're a collaborative team delivering small, custom technology while being positioned to lead the organization across multiple environments.
+                </p>
+              </div>
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/8cc44546-9354-4afe-9adf-501a6959c681.png"
+                  alt="HozIT Team - Our people put you and your team first"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -171,6 +244,8 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
