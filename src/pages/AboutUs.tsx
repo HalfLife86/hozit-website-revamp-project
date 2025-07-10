@@ -3,6 +3,7 @@ import { Users, Award, Shield, Clock, Globe, Headphones } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import AboutHero from '@/components/About/AboutHero';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -48,19 +49,10 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-it-accent text-white py-20 pt-32">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Empowering South African businesses with innovative IT solutions since 2020
-          </p>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* Team Image Section */}
-      <section className="py-16 bg-muted/30">
+      <section id="our-story" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
