@@ -16,7 +16,7 @@ const PopupOffer = () => {
         setIsOpen(true);
         // Mark that user has seen the offer
         localStorage.setItem('hasSeenOffer', 'true');
-      }, 2000);
+      }, 4000);
       
       return () => clearTimeout(timer);
     }
