@@ -163,7 +163,19 @@ const AboutUs = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Directors</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="relative mb-6">
+                <img 
+                  src="/lovable-uploads/991fc7b0-ea5b-4540-9b01-6435c64203b0.png"
+                  alt="W Zozi - Founder & Director"
+                  className="w-48 h-48 mx-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">W Zozi</h3>
+              <p className="text-muted-foreground">Founder & Director</p>
+            </div>
+
             <div className="text-center">
               <div className="relative mb-6">
                 <img 
