@@ -159,6 +159,38 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Directors Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Directors</h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="relative mb-6">
+                <img 
+                  src="/lovable-uploads/28b4ed1f-cd40-402d-93a8-437fd790843e.png"
+                  alt="Ms T Ngwenyama - Director"
+                  className="w-48 h-48 mx-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Ms T Ngwenyama</h3>
+              <p className="text-muted-foreground">Director</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="relative mb-6">
+                <img 
+                  src="/lovable-uploads/3bcc77fb-d743-4bfa-93e4-1541fa7e0857.png"
+                  alt="Ms T Mkhabela - Director"
+                  className="w-48 h-48 mx-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Ms T Mkhabela</h3>
+              <p className="text-muted-foreground">Director</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
