@@ -271,8 +271,32 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Certifications Section */}
       <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Certifications</h2>
+          <div className="flex justify-center items-center gap-8 mb-16 flex-wrap">
+            <img 
+              src="/src/assets/100-black-owned-badge.png"
+              alt="100% Black Owned Certification"
+              className="w-32 h-32 object-contain"
+            />
+            <img 
+              src="/src/assets/70-black-female-youth-badge.png"
+              alt="70% Black Female Youth Certification"
+              className="w-32 h-32 object-contain"
+            />
+            <img 
+              src="/src/assets/bbee-level-1-badge.png"
+              alt="B-BBEE Level 1 Certification"
+              className="w-32 h-32 object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-16">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Mission</h2>
           <p className="text-xl leading-relaxed mb-12">
