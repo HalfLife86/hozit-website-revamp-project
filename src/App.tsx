@@ -43,10 +43,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <TermsAcceptancePopup />
-      <PopupOffer />
-      <WhatsAppFloat />
       <BrowserRouter>
+        <TermsAcceptancePopup />
+        <PopupOffer />
+        <WhatsAppFloat />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutUs />} />
