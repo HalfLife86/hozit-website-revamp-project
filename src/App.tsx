@@ -33,6 +33,8 @@ import ManagedITSupportBlog from "./pages/BlogPosts/ManagedITSupportBlog";
 import CloudServerSolutionsBlog from "./pages/BlogPosts/CloudServerSolutionsBlog";
 import MobileAppDevelopmentBlog from "./pages/BlogPosts/MobileAppDevelopmentBlog";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import TermsAcceptancePopup from "./components/TermsAcceptancePopup";
+import PopupOffer from "./components/PopupOffer";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +43,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <TermsAcceptancePopup />
+      <PopupOffer />
       <WhatsAppFloat />
       <BrowserRouter>
         <Routes>

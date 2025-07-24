@@ -37,20 +37,11 @@ const Loading = () => (
     </div>
     
     <div className="text-center relative z-10">
-      {/* Logo with advanced animations */}
+      {/* Loading icon without logo */}
       <div className="mb-8 flex justify-center">
         <div className="relative">
-          <div className="absolute inset-0 bg-white/30 rounded-2xl blur-xl animate-pulse"></div>
-          <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl">
-            <img 
-              src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" 
-              alt="HozIT Logo" 
-              className="loading-logo animate-pulse transform hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-          {/* Floating rings around logo */}
-          <div className="absolute -inset-4 border-2 border-white/50 rounded-full animate-ping"></div>
-          <div className="absolute -inset-8 border-2 border-white/30 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+          <div className="w-20 h-20 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+          <div className="absolute inset-2 border-4 border-white/20 border-t-white/50 rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '2s' }}></div>
         </div>
       </div>
       
