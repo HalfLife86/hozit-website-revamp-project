@@ -102,7 +102,7 @@ const ContactContent = () => {
               <ContactInfo 
                 icon={Phone} 
                 title="Phone" 
-                content="+27 66 527 5917" 
+                content="+27 11 087 6345" 
               />
               
               <ContactInfo 
