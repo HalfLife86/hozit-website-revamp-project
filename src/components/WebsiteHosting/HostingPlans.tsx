@@ -17,7 +17,7 @@ const HostingPlans = () => {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[180px]">Hosting Features</TableHead>
+                <TableHead className="w-[180px] text-xl font-bold">Hosting Features</TableHead>
                 {hostingPlans.map((plan, index) => (
                   <TableHead key={index} className="text-center">
                     <div className={`px-4 py-2 ${plan.name === "Standard" ? "bg-amber-500 text-white rounded-t-lg" : ""}`}>
