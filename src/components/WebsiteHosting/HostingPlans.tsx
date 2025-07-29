@@ -21,7 +21,7 @@ const HostingPlans = () => {
                 {hostingPlans.map((plan, index) => (
                   <TableHead key={index} className="text-center">
                     <div className={`px-4 py-2 ${plan.name === "Standard" ? "bg-amber-500 text-white rounded-t-lg" : ""}`}>
-                      <h3 className="text-xl font-bold">{plan.name} Hosting</h3>
+                      <h3 className="text-xl font-bold">{plan.name}</h3>
                       <div className="mt-1">
                         <span className="text-2xl font-bold">{plan.price}</span>
                         <span className="text-sm">{plan.period}</span>
@@ -123,7 +123,7 @@ const HostingPlans = () => {
               <TabsContent key={index} value={plan.name.toLowerCase()}>
                 <div className={`rounded-lg overflow-hidden border ${plan.name === "Standard" ? 'border-amber-500 shadow-xl' : 'border-gray-200'}`}>
                   <div className={`p-6 ${plan.name === "Standard" ? 'bg-amber-500 text-white' : ''}`}>
-                    <h3 className="text-2xl font-bold mb-2">{plan.name} Website Hosting</h3>
+                    <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                     <div className="mb-4">
                       <span className="text-3xl font-bold">{plan.price}</span>
                       <span className="text-sm">{plan.period}</span>
