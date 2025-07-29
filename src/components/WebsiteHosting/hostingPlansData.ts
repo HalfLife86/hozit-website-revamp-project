@@ -59,7 +59,7 @@ export const hostingPlans = [
       "10 Subdomains",
       "10 SQL Databases",
       "20 Email Accounts",
-      "Free .co.za Domain",
+      "Free .co.za or .com Domain",
       "Website",
       "24/7 Support",
       "Free SSL Certificate",
@@ -82,7 +82,7 @@ export const hostingPlans = [
       "20 Subdomains",
       "20 SQL Databases",
       "100 Email Accounts",
-      "Free .co.za Domain",
+      "Free .co.za or .com Domain",
       "Website",
       "24/7 Support",
       "Free SSL Certificate"
