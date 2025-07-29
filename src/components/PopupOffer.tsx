@@ -52,7 +52,7 @@ const PopupOffer = () => {
 
           <div className="text-center mt-4 sm:mt-7">
             <a 
-              href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/199-package" 
+              href="https://hozit.co.za/whmcs/index.php?rp=/store/web-hosting/basic-plan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-it-accent text-white px-4 sm:px-7 py-2 sm:py-3 text-base sm:text-lg rounded-lg font-bold shadow-lg hover:bg-orange-500 transition-colors"
