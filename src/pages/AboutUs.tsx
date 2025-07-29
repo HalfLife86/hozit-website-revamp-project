@@ -274,7 +274,6 @@ const AboutUs = () => {
       {/* Certifications Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Certifications</h2>
           <div className="flex justify-center items-center gap-8 mb-16 flex-wrap">
             <img 
               src="/src/assets/100-black-owned-badge.png"
