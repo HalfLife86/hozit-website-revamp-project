@@ -81,6 +81,28 @@ const HostingPlans = () => {
                 ))}
               </TableRow>
               <TableRow>
+                <TableCell className="font-semibold">Free Domain</TableCell>
+                {hostingPlans.map((plan, index) => (
+                  <TableCell key={index} className="text-center">
+                    {plan.features.find(f => f.includes('Domain') && f.includes('Free')) 
+                      ? plan.features.find(f => f.includes('Domain') && f.includes('Free'))?.replace('Free ', '') 
+                      : '-'}
+                  </TableCell>
+                ))}
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Free Website</TableCell>
+                {hostingPlans.map((plan, index) => (
+                  <TableCell key={index} className="text-center">
+                    {plan.features.includes('Website') ? (
+                      <Check className="h-5 w-5 text-green-500 mx-auto" aria-label="Free website included" />
+                    ) : (
+                      '-'
+                    )}
+                  </TableCell>
+                ))}
+              </TableRow>
+              <TableRow>
                 <TableCell className="font-semibold">Free SSL Certificate</TableCell>
                 {hostingPlans.map((plan, index) => (
                   <TableCell key={index} className="text-center">
