@@ -6,7 +6,7 @@ export const hostingPlans = [
     name: "Basic Hosting",
     price: "R199.00",
     period: "/Year",
-    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/199-package",
+    orderLink: "https://hozit.co.za/whmcs/index.php?rp=/store/web-hosting/basic-plan",
     features: [
       "10GB SSD Web Space",
       "500GB Monthly Bandwidth",
@@ -27,7 +27,7 @@ export const hostingPlans = [
     name: "Advanced Hosting",
     price: "R2,500.00",
     period: "/Year",
-    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/advanced-hosting",
+    orderLink: "https://hozit.co.za/whmcs/index.php?rp=/store/web-hosting/standard-hosting",
     features: [
       "50GB SSD Web Space",
       "200GB Monthly Bandwidth",
@@ -49,7 +49,7 @@ export const hostingPlans = [
     name: "Master Hosting",
     price: "R10,000.00",
     period: "/Year",
-    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/master-hosting",
+    orderLink: "https://hozit.co.za/whmcs/index.php?rp=/store/web-hosting/master-hosting-with-website-and-free-coza-domain",
     features: [
       "200GB SSD Web Space",
       "Unlimited Monthly Bandwidth",
@@ -72,7 +72,7 @@ export const hostingPlans = [
     name: "Premium Hosting",
     price: "R20,000.00",
     period: "/Year",
-    orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/premium-hosting",
+    orderLink: "https://hozit.co.za/whmcs/index.php?rp=/store/web-hosting/12-months-premium-hosting-website-and-free-coza-domain",
     features: [
       "300GB SSD Web Space",
       "Unlimited Monthly Bandwidth",
