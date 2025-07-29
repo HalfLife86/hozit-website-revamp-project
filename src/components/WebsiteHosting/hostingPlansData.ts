@@ -70,8 +70,8 @@ export const hostingPlans = [
   },
   {
     name: "Premium Hosting",
-    price: "Contact Us",
-    period: "",
+    price: "R20,000.00",
+    period: "/Year",
     orderLink: "https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/premium-hosting",
     features: [
       "300GB SSD Web Space",
