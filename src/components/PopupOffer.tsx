@@ -6,12 +6,11 @@ const PopupOffer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if user has accepted terms and hasn't seen offer before
-    const hasAcceptedTerms = localStorage.getItem('hasAcceptedTerms');
+    // Check if user hasn't seen offer before
     const hasSeenOffer = localStorage.getItem('hasSeenOffer');
     
-    if (hasAcceptedTerms && !hasSeenOffer) {
-      // Set timeout to show popup after terms acceptance
+    if (!hasSeenOffer) {
+      // Set timeout to show popup after 4 seconds for all users
       const timer = setTimeout(() => {
         setIsOpen(true);
         // Mark that user has seen the offer
