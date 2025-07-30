@@ -57,7 +57,7 @@ const ITSupportPackages = () => {
               </ul>
               <div className="mt-8">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
-                  <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/basic-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
+                  <a href="https://hozit.co.za/whmcs/index.php?rp=/store/it-support/basic-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
                 </Button>
               </div>
             </CardContent>
@@ -105,7 +105,7 @@ const ITSupportPackages = () => {
               </ul>
               <div className="mt-8">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
-                  <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/basic-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
+                  <a href="https://hozit.co.za/whmcs/index.php?rp=/store/it-support/standard-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
                 </Button>
               </div>
             </CardContent>
@@ -146,7 +146,7 @@ const ITSupportPackages = () => {
               </ul>
               <div className="mt-8">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
-                  <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/web-hosting-packages/basic-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
+                  <a href="https://hozit.co.za/whmcs/index.php?rp=/store/it-support/advanced-it-support" target="_blank" rel="noopener noreferrer">Order Now</a>
                 </Button>
               </div>
             </CardContent>
