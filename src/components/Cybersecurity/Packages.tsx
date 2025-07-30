@@ -88,7 +88,7 @@ const CybersecurityPackages = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/contact.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/cyber-security-solutions/basic" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -122,7 +122,7 @@ const CybersecurityPackages = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/contact.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/cyber-security-solutions/standard" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -153,7 +153,7 @@ const CybersecurityPackages = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/contact.php" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/cyber-security-solutions/premium" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
