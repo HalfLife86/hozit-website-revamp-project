@@ -76,7 +76,7 @@ const SEOPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/basic-seo-package" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/basic-seo-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -115,7 +115,7 @@ const SEOPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/standard-seo-package" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/standard-seo-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
@@ -151,7 +151,7 @@ const SEOPackages = () => {
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                 asChild
               >
-                <a href="https://www.hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/premium-seo-package" target="_blank" rel="noopener noreferrer">
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/seo-solutions/premium-seo-package" target="_blank" rel="noopener noreferrer">
                   Order Now
                 </a>
               </Button>
