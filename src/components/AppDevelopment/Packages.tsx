@@ -9,7 +9,8 @@ const PackageCard = ({
   features,
   deliveryDays,
   revisions,
-  description
+  description,
+  url
 }: { 
   title: string;
   price: string;
@@ -17,6 +18,7 @@ const PackageCard = ({
   deliveryDays: number;
   revisions?: number;
   description: string;
+  url: string;
 }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -47,7 +49,9 @@ const PackageCard = ({
             </li>
           )}
         </ul>
-        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">Order Now</Button>
+        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white" asChild>
+          <a href={url} target="_blank" rel="noopener noreferrer">Order Now</a>
+        </Button>
       </div>
     </div>
   );
@@ -67,7 +71,8 @@ const AppDevelopmentPackages = () => {
         "Source code"
       ],
       deliveryDays: 7,
-      revisions: undefined
+      revisions: undefined,
+      url: "https://hozit.co.za/whmcs/index.php?rp=/store/app-development/app-dev-basic-package"
     },
     {
       title: "App Dev Standard Package",
@@ -82,7 +87,8 @@ const AppDevelopmentPackages = () => {
         "Source code"
       ],
       deliveryDays: 21,
-      revisions: 2
+      revisions: 2,
+      url: "https://hozit.co.za/whmcs/index.php?rp=/store/app-development/app-dev-standard-package"
     },
     {
       title: "App Dev Premium Package",
@@ -98,7 +104,8 @@ const AppDevelopmentPackages = () => {
         "Source code"
       ],
       deliveryDays: 45,
-      revisions: 2
+      revisions: 2,
+      url: "https://hozit.co.za/whmcs/index.php?rp=/store/app-development/app-dev-premium-package"
     }
   ];
 
@@ -121,6 +128,7 @@ const AppDevelopmentPackages = () => {
               features={pkg.features}
               deliveryDays={pkg.deliveryDays}
               revisions={pkg.revisions}
+              url={pkg.url}
             />
           ))}
         </div>
