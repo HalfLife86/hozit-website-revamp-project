@@ -68,7 +68,9 @@ const ServerSupportSolutions = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-orange-500 hover:bg-orange-600">Order Now</Button>
+              <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/server-support/windows-server" target="_blank" rel="noopener noreferrer">Order Now</a>
+              </Button>
             </CardFooter>
           </Card>
 
@@ -124,7 +126,9 @@ const ServerSupportSolutions = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-orange-500 hover:bg-orange-600">Order Now</Button>
+              <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/server-support/linux-server-support" target="_blank" rel="noopener noreferrer">Order Now</a>
+              </Button>
             </CardFooter>
           </Card>
 
@@ -176,7 +180,9 @@ const ServerSupportSolutions = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-orange-500 hover:bg-orange-600">Order Now</Button>
+              <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
+                <a href="https://hozit.co.za/whmcs/index.php?rp=/store/server-support/aws-architecture" target="_blank" rel="noopener noreferrer">Order Now</a>
+              </Button>
             </CardFooter>
           </Card>
         </div>
