@@ -13,51 +13,51 @@ const Hero = () => {
         <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white rounded-full opacity-25 animate-pulse delay-150"></div>
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-20">
-        {/* Trust indicators */}
-        <div className="text-center mb-12">
-          <div className="flex flex-wrap justify-center items-center gap-8 text-white mb-6">
-            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-16 sm:pt-20 pb-16 sm:pb-20">
+        {/* Trust indicators - Optimized for mobile */}
+        <div className="text-center mb-8 md:mb-12">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-6 lg:gap-8 text-white mb-4 sm:mb-6">
+            <div className="flex items-center space-x-2 sm:space-x-3 bg-black/20 backdrop-blur-sm px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-white/30 w-full sm:w-auto max-w-xs sm:max-w-none">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-4 sm:w-5 h-4 sm:h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-base font-bold text-white">Excellent on Google Reviews</span>
+              <span className="text-sm sm:text-base font-bold text-white">Excellent on Google Reviews</span>
             </div>
-            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
-              <Users className="w-5 h-5 text-white" />
-              <span className="text-base font-bold text-white">1,245+ Clients & Counting</span>
+            <div className="flex items-center space-x-2 sm:space-x-3 bg-black/20 backdrop-blur-sm px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-white/30 w-full sm:w-auto max-w-xs sm:max-w-none">
+              <Users className="w-4 sm:w-5 h-4 sm:h-5 text-white flex-shrink-0" />
+              <span className="text-sm sm:text-base font-bold text-white">1,245+ Clients & Counting</span>
             </div>
-            <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
-              <Trophy className="w-5 h-5 text-yellow-400" />
-              <span className="text-base font-bold text-white">400+ Projects Delivered</span>
+            <div className="flex items-center space-x-2 sm:space-x-3 bg-black/20 backdrop-blur-sm px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-white/30 w-full sm:w-auto max-w-xs sm:max-w-none">
+              <Trophy className="w-4 sm:w-5 h-4 sm:h-5 text-yellow-400 flex-shrink-0" />
+              <span className="text-sm sm:text-base font-bold text-white">400+ Projects Delivered</span>
             </div>
           </div>
-          <div className="flex justify-center items-center space-x-3 bg-black/30 backdrop-blur-sm px-6 py-4 rounded-full border border-white/40 inline-flex">
-            <Heart className="w-6 h-6 fill-pink-400 text-pink-400" />
-            <span className="text-lg font-bold text-white">70% Young Black Female Owned Business</span>
+          <div className="flex justify-center items-center space-x-2 sm:space-x-3 bg-black/30 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-full border border-white/40 max-w-sm sm:max-w-none mx-auto">
+            <Heart className="w-5 sm:w-6 h-5 sm:h-6 fill-pink-400 text-pink-400 flex-shrink-0" />
+            <span className="text-sm sm:text-lg font-bold text-white text-center">70% Young Black Female Owned Business</span>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            {/* Optimized heading for LCP */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-white">
+          <div className="text-center lg:text-left px-4 sm:px-0">
+            {/* Optimized heading for LCP - Mobile responsive */}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-4 sm:mb-6 leading-tight text-white">
               Professional IT Solutions for{' '}
               <span className="text-black">South African Business Growth</span>
             </h1>
-            <p className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl text-white mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Transform your business with our comprehensive IT services including web hosting, 
               cybersecurity, technical support, and custom development solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button 
                 size="lg" 
-                className="bg-black hover:bg-gray-800 text-white font-bold group"
+                className="bg-black hover:bg-gray-800 text-white font-bold group w-full sm:w-auto min-h-[48px] touch-manipulation"
                 asChild
               >
-                <a href="#services">
+                <a href="#services" className="flex items-center justify-center">
                   Explore Our Services
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>

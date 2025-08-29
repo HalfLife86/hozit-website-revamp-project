@@ -4,35 +4,35 @@ import { Facebook, X, Instagram, Linkedin } from 'lucide-react';
 import TermsAcceptancePopup from './TermsAcceptancePopup';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-white text-black py-12">
+  return <footer className="bg-white text-black py-8 sm:py-12">
       {/* Terms of Use Popup */}
       <TermsAcceptancePopup />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <div className="mb-4 flex items-center justify-between">
-              <img src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" alt="HozIT Logo" className="footer-logo h-10 md:h-12 w-auto" />
-              <img src="/lovable-uploads/61863a51-8895-4a73-ad0d-f4e07312f125.png" alt="Supported Payment Methods" className="h-8 md:h-10 w-auto ml-4" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between lg:flex-col lg:items-start">
+              <img src="/lovable-uploads/3f00cb73-4a9d-4b38-8f54-faeb625236a2.png" alt="HozIT Logo" className="footer-logo h-8 sm:h-10 md:h-12 w-auto mb-2 sm:mb-0 lg:mb-2" />
+              <img src="/lovable-uploads/61863a51-8895-4a73-ad0d-f4e07312f125.png" alt="Supported Payment Methods" className="h-6 sm:h-8 md:h-10 w-auto" />
             </div>
-            <p className="text-black mb-4">
+            <p className="text-black mb-4 text-sm sm:text-base leading-relaxed">
               Providing professional IT solutions and services to businesses of all sizes.
             </p>
             
-            <div className="flex space-x-4">
-              <a href="https://web.facebook.com/people/Hozit-Domain-Hosting/100086561992144/?mibextid=PtKPJ9" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
+              <a href="https://web.facebook.com/people/Hozit-Domain-Hosting/100086561992144/?mibextid=PtKPJ9" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors p-2 -m-2" aria-label="Follow us on Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://x.com/hozit_sa" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
+              <a href="https://x.com/hozit_sa" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors p-2 -m-2" aria-label="Follow us on X (Twitter)">
                 <X className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/hozit_sa/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
+              <a href="https://www.instagram.com/hozit_sa/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors p-2 -m-2" aria-label="Follow us on Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/company/hozit-domain-hosting" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
+              <a href="https://www.linkedin.com/company/hozit-domain-hosting" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors p-2 -m-2" aria-label="Follow us on LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://www.tiktok.com/@hozit.domain.host" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors">
+              <a href="https://www.tiktok.com/@hozit.domain.host" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 transition-colors p-2 -m-2" aria-label="Follow us on TikTok">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.321 5.562a5.124 5.124 0 0 1-3.035-2.494 5.12 5.12 0 0 1-.477-1.976H12.05v12.337a2.318 2.318 0 0 1-3.555 1.959 2.318 2.318 0 0 1-1.082-1.959c0-1.28 1.037-2.318 2.318-2.318.22 0 .433.031.636.088V7.406a6.114 6.114 0 0 0-.636-.033c-3.382 0-6.124 2.742-6.124 6.124S6.349 19.62 9.731 19.62c3.383 0 6.124-2.742 6.124-6.124v-6.87a8.803 8.803 0 0 0 5.322 1.77V5.562h-1.856Z" />
                 </svg>
@@ -88,15 +88,15 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-200 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-black text-sm">
+        <div className="border-t border-gray-200 mt-8 sm:mt-12 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p className="text-black text-xs sm:text-sm text-center sm:text-left">
               © {currentYear} HozIT. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/terms-of-service" className="text-sm text-black hover:text-gray-700 transition-colors">Terms of Service</Link>
-              <Link to="/privacy-policy" className="text-sm text-black hover:text-gray-700 transition-colors">Privacy Policy</Link>
-              <Link to="/sitemap" className="text-sm text-black hover:text-gray-700 transition-colors">Sitemap</Link>
+            <div className="flex flex-wrap gap-4 sm:gap-6 justify-center sm:justify-end">
+              <Link to="/terms-of-service" className="text-xs sm:text-sm text-black hover:text-gray-700 transition-colors py-1">Terms of Service</Link>
+              <Link to="/privacy-policy" className="text-xs sm:text-sm text-black hover:text-gray-700 transition-colors py-1">Privacy Policy</Link>
+              <Link to="/sitemap" className="text-xs sm:text-sm text-black hover:text-gray-700 transition-colors py-1">Sitemap</Link>
             </div>
           </div>
         </div>

@@ -4,14 +4,14 @@ import { Button } from '@/components/ui/button';
 
 const FeatureCard = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description: string }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+    <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
       <div className="flex items-start">
-        <div className="mr-4">
-          <Icon className="h-8 w-8 text-it-blue" />
+        <div className="mr-3 sm:mr-4 flex-shrink-0">
+          <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-it-blue" />
         </div>
         <div>
-          <h3 className="text-xl font-bold mb-2 text-gray-900">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 leading-tight">{title}</h3>
+          <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{description}</p>
         </div>
       </div>
     </div>
@@ -110,15 +110,15 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20">
+    <section id="features" className="py-12 sm:py-16 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 font-heading">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 font-heading px-4 sm:px-0">
             Experience The HOZIT Features Difference Today!
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index} 
@@ -129,34 +129,34 @@ const Features = () => {
           ))}
         </div>
         
-        <div className="bg-it-accent text-black rounded-lg p-8 md:p-12 mb-16">
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+        <div className="bg-it-accent text-black rounded-lg p-6 sm:p-8 md:p-12 mb-12 sm:mb-16">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 items-center">
             <div className="md:col-span-2">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">HOZIT Guarantees</h3>
-              <p className="mb-6 text-black">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-black">HOZIT Guarantees</h3>
+              <p className="mb-4 sm:mb-6 text-black text-sm sm:text-base leading-relaxed">
                 We are proud to guarantee a quality hosting experience or your money back. 
                 A guarantee based on reality… who would have thought?!
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                 {guarantees.map((guarantee, index) => (
                   <GuaranteeItem key={index} text={guarantee} />
                 ))}
               </div>
               
-              <Button className="mt-6 bg-white text-black hover:bg-gray-100">
+              <Button className="mt-4 sm:mt-6 bg-white text-black hover:bg-gray-100 w-full sm:w-auto min-h-[44px] sm:min-h-[48px] touch-manipulation text-sm sm:text-base">
                 View All Guarantees
               </Button>
             </div>
             <div className="hidden md:block">
-              <Shield className="h-32 w-32 mx-auto text-black opacity-60" />
+              <Shield className="h-24 w-24 lg:h-32 lg:w-32 mx-auto text-black opacity-60" />
             </div>
           </div>
         </div>
         
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Our Partners</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
+        <div className="mb-0">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-center text-gray-900">Our Partners</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 items-center">
             {partners.map((partner, index) => (
               <PartnerLogo key={index} name={partner.name} logoUrl={partner.logoUrl} />
             ))}

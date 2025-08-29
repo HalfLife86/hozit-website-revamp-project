@@ -18,22 +18,22 @@ const ServiceCard = ({
   link?: string;
 }) => {
   const ButtonComponent = link ? (
-    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full" asChild>
+    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full min-h-[44px] sm:min-h-[48px] touch-manipulation text-sm sm:text-base" asChild>
       <Link to={link}>{ctaText}</Link>
     </Button>
   ) : (
-    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full">
+    <Button className="bg-it-accent hover:bg-amber-600 text-white mt-auto w-full min-h-[44px] sm:min-h-[48px] touch-manipulation text-sm sm:text-base">
       {ctaText}
     </Button>
   );
 
   return (
     <div className="service-card flex flex-col h-full">
-      <div className="bg-it-blue/10 inline-flex p-3 rounded-lg mb-4">
-        <Icon className="h-6 w-6 text-it-blue" />
+      <div className="bg-it-blue/10 inline-flex p-3 rounded-lg mb-4 w-fit">
+        <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-it-blue" />
       </div>
-      <h3 className="text-xl font-bold mb-2 text-gray-900">{title}</h3>
-      <p className="text-gray-600 mb-4 flex-grow">{description}</p>
+      <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 leading-tight">{title}</h3>
+      <p className="text-sm sm:text-base text-gray-600 mb-4 flex-grow leading-relaxed">{description}</p>
       {ButtonComponent}
     </div>
   );
@@ -128,16 +128,16 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-it-gray">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-it-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 font-heading">Services We are Providing</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 font-heading px-4 sm:px-0">Services We are Providing</h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
             Check our Top Notch services and select the services which you need to get the solution of your problem.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <ServiceCard 
               key={index} 
